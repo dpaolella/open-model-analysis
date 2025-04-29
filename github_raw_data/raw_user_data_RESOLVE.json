@@ -1,0 +1,206 @@
+{
+  "stargazers": [
+    {
+      "login": "pswild",
+      "name": "Parker Wild",
+      "email": "",
+      "company": "Princeton University",
+      "bio": "SINSI Graduate Fellow at Princeton University.",
+      "location": "",
+      "user_type": "User",
+      "followers": 2,
+      "public_repos": 9,
+      "interaction_type": "star"
+    },
+    {
+      "login": "pauljgasper",
+      "name": "",
+      "email": "",
+      "company": "",
+      "bio": "",
+      "location": "",
+      "user_type": "User",
+      "followers": 11,
+      "public_repos": 6,
+      "interaction_type": "star"
+    },
+    {
+      "login": "Ly0n",
+      "name": "Tobias Augspurger",
+      "email": "tobias.augspurger@protontypes.eu",
+      "company": "@open-energy-transition @protontypes",
+      "bio": "Aerospace engineer with a passion for open sustainable technology ",
+      "location": "Germany, Aachen",
+      "user_type": "User",
+      "followers": 295,
+      "public_repos": 120,
+      "interaction_type": "star"
+    },
+    {
+      "login": "gutzbenj",
+      "name": "Benjamin",
+      "email": "gutzemann@gmail.com",
+      "company": "Otto Group data.works | @OG-DW ",
+      "bio": "Climate \ud83c\udf26 | Data \ud83d\udcca | Python \ud83d\udc0d",
+      "location": "Hamburg",
+      "user_type": "User",
+      "followers": 146,
+      "public_repos": 25,
+      "interaction_type": "star"
+    },
+    {
+      "login": "rpiatt",
+      "name": "Ryan",
+      "email": "",
+      "company": "",
+      "bio": "",
+      "location": "",
+      "user_type": "User",
+      "followers": 1,
+      "public_repos": 2,
+      "interaction_type": "star"
+    }
+  ],
+  "forkers": [
+    {
+      "login": "gridstor",
+      "name": "",
+      "email": "",
+      "company": "",
+      "bio": "",
+      "location": "",
+      "user_type": "User",
+      "followers": 0,
+      "public_repos": 1,
+      "interaction_type": "fork"
+    },
+    {
+      "login": "liyangw6",
+      "name": "",
+      "email": "",
+      "company": "",
+      "bio": "",
+      "location": "",
+      "user_type": "User",
+      "followers": 1,
+      "public_repos": 3,
+      "interaction_type": "fork"
+    }
+  ],
+  "contributors": [
+    {
+      "login": "goroderickgo",
+      "name": "Roderick Go",
+      "email": "",
+      "company": "@e3- ",
+      "bio": "",
+      "location": "California",
+      "user_type": "User",
+      "followers": 9,
+      "public_repos": 6,
+      "interaction_type": "contributor",
+      "contributions": 80
+    },
+    {
+      "login": "github-actions[bot]",
+      "name": "",
+      "email": "",
+      "company": "",
+      "bio": "",
+      "location": "",
+      "user_type": "Bot",
+      "followers": 0,
+      "public_repos": 0,
+      "interaction_type": "contributor",
+      "contributions": 5
+    },
+    {
+      "login": "sam-kramer-e3",
+      "name": "Sam Kramer",
+      "email": "",
+      "company": "",
+      "bio": "",
+      "location": "",
+      "user_type": "User",
+      "followers": 1,
+      "public_repos": 0,
+      "interaction_type": "contributor",
+      "contributions": 2
+    },
+    {
+      "login": "Ritvikj8",
+      "name": "Ritvik",
+      "email": "",
+      "company": "",
+      "bio": "",
+      "location": "",
+      "user_type": "User",
+      "followers": 0,
+      "public_repos": 1,
+      "interaction_type": "contributor",
+      "contributions": 1
+    }
+  ],
+  "watchers": [
+    {
+      "login": "pswild",
+      "name": "Parker Wild",
+      "email": "",
+      "company": "Princeton University",
+      "bio": "SINSI Graduate Fellow at Princeton University.",
+      "location": "",
+      "user_type": "User",
+      "followers": 2,
+      "public_repos": 9,
+      "interaction_type": "watcher"
+    },
+    {
+      "login": "pauljgasper",
+      "name": "",
+      "email": "",
+      "company": "",
+      "bio": "",
+      "location": "",
+      "user_type": "User",
+      "followers": 11,
+      "public_repos": 6,
+      "interaction_type": "watcher"
+    },
+    {
+      "login": "Ly0n",
+      "name": "Tobias Augspurger",
+      "email": "tobias.augspurger@protontypes.eu",
+      "company": "@open-energy-transition @protontypes",
+      "bio": "Aerospace engineer with a passion for open sustainable technology ",
+      "location": "Germany, Aachen",
+      "user_type": "User",
+      "followers": 295,
+      "public_repos": 120,
+      "interaction_type": "watcher"
+    },
+    {
+      "login": "gutzbenj",
+      "name": "Benjamin",
+      "email": "gutzemann@gmail.com",
+      "company": "Otto Group data.works | @OG-DW ",
+      "bio": "Climate \ud83c\udf26 | Data \ud83d\udcca | Python \ud83d\udc0d",
+      "location": "Hamburg",
+      "user_type": "User",
+      "followers": 146,
+      "public_repos": 25,
+      "interaction_type": "watcher"
+    },
+    {
+      "login": "rpiatt",
+      "name": "Ryan",
+      "email": "",
+      "company": "",
+      "bio": "",
+      "location": "",
+      "user_type": "User",
+      "followers": 1,
+      "public_repos": 2,
+      "interaction_type": "watcher"
+    }
+  ]
+}

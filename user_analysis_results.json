@@ -1,0 +1,2276 @@
+[
+  {
+    "repo_name": "Temoa",
+    "total_users": 132,
+    "classification_counts": {
+      "academic": 22,
+      "unknown": 90,
+      "professional": 9,
+      "industry": 6,
+      "government": 2,
+      "financial": 1,
+      "rto": 1,
+      "research_organization": 1
+    },
+    "contributor_class_counts": {
+      "unknown": 8,
+      "industry": 1,
+      "professional": 1,
+      "academic": 2,
+      "research_organization": 1
+    },
+    "top_organizations": {
+      "national renewable energy laboratory": 2,
+      "north carolina state university": 2,
+      "kth": 1,
+      "self-employed": 1,
+      "tesla": 1,
+      "oak ridge national laboratory": 1,
+      "catalyst-cooperative": 1,
+      "csiro": 1,
+      "bazantgroup": 1,
+      "starling foundries, llc": 1
+    },
+    "organizations_by_type": {
+      "academic": {
+        "north carolina state university": 2,
+        "kth": 1,
+        "catalyst-cooperative": 1,
+        "technical university of berlin": 1,
+        "newcastle university, uk": 1
+      },
+      "professional": {
+        "self-employed": 1,
+        "csiro": 1,
+        "cmcc-foundation": 1,
+        "open-energy-transition protontypes": 1,
+        "everbright": 1
+      },
+      "industry": {
+        "tesla": 1,
+        "bazantgroup": 1,
+        "starling foundries, llc": 1,
+        "ethos sustainability group": 1,
+        "nonlinear artificial intelligence lab": 1
+      },
+      "government": {
+        "oak ridge national laboratory": 1,
+        "national renewable energy laboratory": 1
+      },
+      "unknown": {
+        "emergi": 1,
+        "catalyst coop": 1,
+        "universe": 1,
+        "modelon": 1,
+        "industrial info": 1
+      },
+      "financial": {
+        "rabobank": 1
+      },
+      "rto": {
+        "dunsky energy + climate advisors": 1
+      },
+      "research_organization": {
+        "international institute for applied systems analysis (iiasa": 1
+      }
+    },
+    "top_locations": {
+      "Raleigh, NC": 4,
+      "Beijing, China": 2,
+      "Stockholm, Sweden": 1,
+      "Somerville, MA": 1,
+      "EU": 1,
+      "Ireland": 1,
+      "Oak Ridge, TN": 1,
+      "United States": 1,
+      "Chiapas, M\u00e9xico": 1,
+      "Madrid, Spain": 1
+    }
+  },
+  {
+    "repo_name": "PowerModels",
+    "total_users": 530,
+    "classification_counts": {
+      "unknown": 327,
+      "academic": 128,
+      "professional": 42,
+      "industry": 19,
+      "government": 8,
+      "rto": 1,
+      "research_organization": 3,
+      "financial": 2
+    },
+    "contributor_class_counts": {
+      "professional": 3,
+      "government": 1,
+      "academic": 5,
+      "unknown": 15,
+      "industry": 3,
+      "rto": 1
+    },
+    "top_organizations": {
+      "massachusetts institute of technology": 5,
+      "ku leuven": 4,
+      "national renewable energy laboratory": 3,
+      "los alamos national laboratory": 3,
+      "beacon biosignals": 2,
+      "technical university of berlin": 2,
+      "georgia tech": 2,
+      "southeast university": 2,
+      "national university of singapore": 2,
+      "dalian university of technology": 2
+    },
+    "organizations_by_type": {
+      "unknown": {
+        "ku leuven": 4,
+        "doing the math": 1,
+        "mines paris-psl": 1,
+        "inma, icteam, uclouvain": 1,
+        "ku leuven / energyville": 1
+      },
+      "academic": {
+        "massachusetts institute of technology": 5,
+        "national renewable energy laboratory": 3,
+        "los alamos national laboratory": 3,
+        "technical university of berlin": 2,
+        "georgia tech": 2
+      },
+      "industry": {
+        "rensselaer polytechnic institute, alsetlab, openipsl": 1,
+        "tesla": 1,
+        "retoflow gmbh": 1,
+        "self-employment, inc": 1,
+        "shell": 1
+      },
+      "government": {
+        "national renewable energy laboratory (national renewable energy laboratory": 2,
+        "national renewable energy laboratory , uw": 1,
+        "pacific northwest national laboratory": 1,
+        "ece department, university of patras": 1,
+        "department of the air force": 1
+      },
+      "professional": {
+        "x.m. s.a. e.s.p": 1,
+        "berkeley lab": 1,
+        "the university of sydney": 1,
+        "beacon biosignals": 1,
+        "coes sinac": 1
+      },
+      "rto": {
+        "ercot": 1
+      },
+      "research_organization": {
+        "starsoul science&technology": 1,
+        "sintef energy research": 1,
+        "german aerospace center (dlr), institute of networked energy systems": 1
+      },
+      "financial": {
+        "capital one": 1,
+        "ecesis investment llc": 1
+      }
+    },
+    "top_locations": {
+      "Canada": 6,
+      "Seattle, WA": 5,
+      "Cambridge, MA": 5,
+      "Belgium": 4,
+      "Toronto": 4,
+      "Paris, France": 3,
+      "Australia": 3,
+      "Atlanta, GA": 3,
+      "Paris": 3,
+      "United States": 3
+    }
+  },
+  {
+    "repo_name": "pandapower",
+    "total_users": 1338,
+    "classification_counts": {
+      "unknown": 1001,
+      "academic": 191,
+      "professional": 93,
+      "government": 5,
+      "industry": 33,
+      "financial": 3,
+      "utility": 3,
+      "research_organization": 8,
+      "ngo": 1
+    },
+    "contributor_class_counts": {
+      "government": 2,
+      "industry": 6,
+      "unknown": 79,
+      "academic": 18,
+      "professional": 7
+    },
+    "top_organizations": {
+      "fraunhofer iee": 6,
+      "delft university of technology": 5,
+      "southeast university": 4,
+      "national renewable energy laboratory": 3,
+      "pacific northwest national laboratory": 3,
+      "kth": 2,
+      "rte": 2,
+      "retoflow gmbh": 2,
+      "sichuan university": 2,
+      "capgemini engineering": 2
+    },
+    "organizations_by_type": {
+      "unknown": {
+        "sereact.ai": 1,
+        "german aerospace center (dlr": 1,
+        "electronics designer, rf amateur, f1 fans": 1,
+        "bani": 1,
+        "momenta": 1
+      },
+      "academic": {
+        "fraunhofer iee": 6,
+        "delft university of technology": 5,
+        "southeast university": 4,
+        "pacific northwest national laboratory": 3,
+        "national renewable energy laboratory": 2
+      },
+      "government": {
+        "national renewable energy laboratory": 1,
+        "department of energy management and power system operation": 1,
+        "sandia national laboratories": 1,
+        "argonne national laboratory (argonne national laboratory": 1,
+        "national renewable energy laboratory (national renewable energy laboratory": 1
+      },
+      "professional": {
+        "self-employed": 1,
+        "3vgeomatics": 1,
+        "btg pactual": 1,
+        "equilibrium-energy": 1,
+        "mpei": 1
+      },
+      "industry": {
+        "retoflow gmbh": 2,
+        "reiner lemoine institut ggmbh": 1,
+        "kaizu denki co.,ltd": 1,
+        "exnaton ag": 1,
+        "tesla": 1
+      },
+      "financial": {
+        "rabobank": 1,
+        "intact financial corporation": 1,
+        "ecesis investment llc": 1
+      },
+      "utility": {
+        "capgemini engineering": 2,
+        "gisce ti, s.l": 1
+      },
+      "research_organization": {
+        "starsoul science&technology": 1,
+        "era energy research and analytics": 1,
+        "institute for energy studies": 1,
+        "ie3-institute": 1,
+        "korea institute of energy research": 1
+      },
+      "ngo": {
+        "rmi": 1
+      }
+    },
+    "top_locations": {
+      "Germany": 15,
+      "Berlin": 13,
+      "Beijing": 9,
+      "Kassel": 8,
+      "Brazil": 7,
+      "Singapore": 6,
+      "Netherlands": 5,
+      "China": 5,
+      "Australia": 5,
+      "London": 5
+    }
+  },
+  {
+    "repo_name": "ParaEMT",
+    "total_users": 91,
+    "classification_counts": {
+      "academic": 24,
+      "professional": 6,
+      "unknown": 61
+    },
+    "contributor_class_counts": {
+      "unknown": 2,
+      "academic": 2
+    },
+    "top_organizations": {
+      "north carolina state university": 1,
+      "dalian university of technology": 1,
+      "georgia tech": 1,
+      "hefei university of technology": 1,
+      "southeast university": 1,
+      "national renewable energy laboratory": 1,
+      "universitas gadjah mada": 1,
+      "encoord": 1,
+      "university of tennessee, knoxville": 1,
+      "eroots analytics": 1
+    },
+    "organizations_by_type": {
+      "academic": {
+        "north carolina state university": 1,
+        "dalian university of technology": 1,
+        "georgia tech": 1,
+        "hefei university of technology": 1,
+        "southeast university": 1
+      },
+      "unknown": {
+        "encoord": 1,
+        "eroots analytics": 1,
+        "jacobs": 1,
+        "kth": 1,
+        "netzero ai": 1
+      },
+      "professional": {
+        "coordinador electrico nacional": 1,
+        "tcn": 1,
+        "cemig distribui\u00e7\u00e3o s.a": 1,
+        "instabase": 1
+      }
+    },
+    "top_locations": {
+      "Perth, Australia": 2,
+      "USA": 2,
+      "Raleigh, NC": 1,
+      "Berlin": 1,
+      "Dalian": 1,
+      "Atlanta, GA": 1,
+      "China": 1,
+      "Nanjing": 1,
+      "Indonesia": 1,
+      "Denver, Colorado, USA": 1
+    }
+  },
+  {
+    "repo_name": "RESOLVE",
+    "total_users": 11,
+    "classification_counts": {
+      "academic": 1,
+      "unknown": 8,
+      "professional": 1,
+      "industry": 1
+    },
+    "contributor_class_counts": {
+      "unknown": 4
+    },
+    "top_organizations": {
+      "princeton university": 1,
+      "open-energy-transition protontypes": 1,
+      "otto group data.works | og-dw": 1,
+      "e3": 1
+    },
+    "organizations_by_type": {
+      "academic": {
+        "princeton university": 1
+      },
+      "professional": {
+        "open-energy-transition protontypes": 1
+      },
+      "industry": {
+        "otto group data.works | og-dw": 1
+      },
+      "unknown": {
+        "e3": 1
+      }
+    },
+    "top_locations": {
+      "Germany, Aachen": 1,
+      "Hamburg": 1,
+      "California": 1
+    }
+  },
+  {
+    "repo_name": "PRAS",
+    "total_users": 81,
+    "classification_counts": {
+      "unknown": 45,
+      "government": 5,
+      "industry": 3,
+      "academic": 23,
+      "ngo": 1,
+      "professional": 1,
+      "financial": 1,
+      "rto": 1,
+      "utility": 1
+    },
+    "contributor_class_counts": {
+      "government": 2,
+      "academic": 3,
+      "unknown": 3,
+      "utility": 1
+    },
+    "top_organizations": {
+      "national renewable energy laboratory": 5,
+      "the national renewable energy laboratory": 2,
+      "e3": 1,
+      "our next energy, inc": 1,
+      "microsoft": 1,
+      "dnv": 1,
+      "tianjin university": 1,
+      "rmi": 1,
+      "national renewable energy laboratory , uw": 1,
+      "ney york independent system operator (nyiso": 1
+    },
+    "organizations_by_type": {
+      "government": {
+        "national renewable energy laboratory": 3,
+        "national renewable energy laboratory , uw": 1,
+        "us department of energy": 1
+      },
+      "unknown": {
+        "e3": 1,
+        "dnv": 1,
+        "plurigrid": 1,
+        "jacobs": 1,
+        "netzero ai": 1
+      },
+      "industry": {
+        "our next energy, inc": 1,
+        "microsoft": 1,
+        "agora energiewende": 1
+      },
+      "academic": {
+        "national renewable energy laboratory": 2,
+        "the national renewable energy laboratory": 2,
+        "tianjin university": 1,
+        "university of strathclyde": 1,
+        "juliachemicalreactions, hartreefoca": 1
+      },
+      "ngo": {
+        "rmi": 1
+      },
+      "professional": {
+        "ney york independent system operator (nyiso": 1
+      },
+      "financial": {
+        "imperial college london/world bank": 1
+      },
+      "rto": {
+        "first principles advisory": 1
+      },
+      "utility": {
+        "nextera analytics": 1
+      }
+    },
+    "top_locations": {
+      "Boulder, CO": 3,
+      "Denver, CO, USA": 2,
+      "Golden, CO": 2,
+      "Seattle, WA": 2,
+      "Denver, CO": 1,
+      "California": 1,
+      "Cambridge, MA": 1,
+      "Tucson, AZ": 1,
+      "NY": 1,
+      "Tianjin China": 1
+    }
+  },
+  {
+    "repo_name": "GenX",
+    "total_users": 401,
+    "classification_counts": {
+      "academic": 79,
+      "unknown": 264,
+      "research_organization": 11,
+      "professional": 23,
+      "industry": 14,
+      "government": 4,
+      "ngo": 3,
+      "financial": 3
+    },
+    "contributor_class_counts": {
+      "academic": 12,
+      "unknown": 17,
+      "professional": 1
+    },
+    "top_organizations": {
+      "princeton university": 9,
+      "massachusetts institute of technology": 4,
+      "national renewable energy laboratory": 3,
+      "stanford university": 3,
+      "binghamton university": 2,
+      "rmi": 2,
+      "duke university": 2,
+      "tianjin university": 2,
+      "carbonplan": 1,
+      "divecha centre for climate change, indian institute of science": 1
+    },
+    "organizations_by_type": {
+      "academic": {
+        "princeton university": 9,
+        "massachusetts institute of technology": 4,
+        "stanford university": 3,
+        "binghamton university": 2,
+        "national renewable energy laboratory": 2
+      },
+      "unknown": {
+        "carbonplan": 1,
+        "dnv": 1,
+        "catalyst coop": 1,
+        "e3": 1,
+        "psrenergy and lampspuc": 1
+      },
+      "research_organization": {
+        "divecha centre for climate change, indian institute of science": 1,
+        "phd. computer science, carnegie mellon": 1,
+        "german aerospace center (dlr), institute of networked energy systems": 1,
+        "eastern-research-group": 1,
+        "international institute for applied systems analysis": 1
+      },
+      "industry": {
+        "sundell open source consulting ab": 1,
+        "danish energy agency": 1,
+        "our next energy, inc": 1,
+        "opusonesolutions": 1,
+        "hpinc": 1
+      },
+      "professional": {
+        "university of surrey": 1,
+        "centrica": 1,
+        "open-energy-transition protontypes": 1,
+        "swisslog logistics automation": 1,
+        "phytomech": 1
+      },
+      "government": {
+        "oak ridge national laboratory-cees oak ridge national laboratory": 1,
+        "national renewable energy laboratory": 1,
+        "los alamos national laboratory": 1,
+        "national renewable energy laboratory, ut austin": 1
+      },
+      "ngo": {
+        "rmi": 2,
+        "greenpeace": 1
+      },
+      "financial": {
+        "imperial college london/world bank": 1,
+        "substackinc": 1,
+        "rabobank": 1
+      }
+    },
+    "top_locations": {
+      "Sweden": 5,
+      "Princeton, NJ": 5,
+      "Berlin": 4,
+      "Cambridge, MA": 4,
+      "United States of America": 4,
+      "United States": 3,
+      "New York, NY": 3,
+      "san francisco": 2,
+      "Washington, DC": 2,
+      "Hong Kong": 2
+    }
+  },
+  {
+    "repo_name": "Dyna\u03c9o",
+    "total_users": 119,
+    "classification_counts": {
+      "unknown": 90,
+      "academic": 16,
+      "professional": 8,
+      "research_organization": 2,
+      "industry": 3
+    },
+    "contributor_class_counts": {
+      "unknown": 27,
+      "academic": 2
+    },
+    "top_organizations": {
+      "rte": 7,
+      "fraunhofer iee": 3,
+      "boralex-france": 1,
+      "north carolina state university": 1,
+      "the university of texas at arlington": 1,
+      "fossee, iit bombay": 1,
+      "supergrid institute": 1,
+      "opus one solutions": 1,
+      "aicc.site": 1,
+      "hefei university of technology": 1
+    },
+    "organizations_by_type": {
+      "unknown": {
+        "rte": 6,
+        "boralex-france": 1,
+        "fossee, iit bombay": 1,
+        "aicc.site": 1,
+        "modelon": 1
+      },
+      "academic": {
+        "fraunhofer iee": 3,
+        "north carolina state university": 1,
+        "the university of texas at arlington": 1,
+        "hefei university of technology": 1,
+        "federal university of ceara": 1
+      },
+      "research_organization": {
+        "supergrid institute": 1,
+        "model based innovation llc": 1
+      },
+      "industry": {
+        "opus one solutions": 1,
+        "caterpillar inc": 1,
+        "genieframework": 1
+      },
+      "professional": {
+        "rte": 1,
+        "enersys": 1,
+        "open-energy-transition protontypes": 1,
+        "coordinador electrico nacional": 1
+      }
+    },
+    "top_locations": {
+      "Paris": 4,
+      "France": 2,
+      "Germany": 2,
+      "Lyon": 2,
+      "Brazil": 2,
+      "Barcelona": 2,
+      "Lyon, France": 1,
+      "Raleigh, NC": 1,
+      "Berlin": 1,
+      "416 Yates Street, Arlington, TX 76010, USA": 1
+    }
+  },
+  {
+    "repo_name": "PVWatts Calculator",
+    "total_users": 175,
+    "classification_counts": {
+      "unknown": 128,
+      "government": 10,
+      "financial": 2,
+      "industry": 6,
+      "professional": 9,
+      "academic": 18,
+      "utility": 1,
+      "research_organization": 1
+    },
+    "contributor_class_counts": {
+      "unknown": 15,
+      "government": 9,
+      "research_organization": 1,
+      "academic": 6,
+      "professional": 1
+    },
+    "top_organizations": {
+      "national renewable energy laboratory": 10,
+      "sandia national laboratories": 2,
+      "energeticinsurance": 1,
+      "dnv": 1,
+      "luxoft (a dxc company": 1,
+      "national renewable energy laboratory , uw": 1,
+      "dnvgl": 1,
+      "university of wisconsin-madison": 1,
+      "national renewable energy laboratory.gov": 1,
+      "irasus technologies private limited": 1
+    },
+    "organizations_by_type": {
+      "government": {
+        "national renewable energy laboratory": 5,
+        "sandia national laboratories": 2,
+        "national renewable energy laboratory , uw": 1,
+        "national renewable energy laboratory.gov": 1,
+        "llnl": 1
+      },
+      "financial": {
+        "energeticinsurance": 1,
+        "bank of america": 1
+      },
+      "unknown": {
+        "dnv": 1,
+        "h1-card": 1,
+        "utfpr": 1,
+        "scaleway": 1,
+        "machine learning engineer at deepedge": 1
+      },
+      "industry": {
+        "luxoft (a dxc company": 1,
+        "shaleshake technologies": 1,
+        "solaris technical llc": 1,
+        "nanogrid technologies, pbc": 1,
+        "sse plc": 1
+      },
+      "professional": {
+        "dnvgl": 1,
+        "open-energy-transition protontypes": 1,
+        "general electric": 1,
+        "morgansolar": 1,
+        "effibem": 1
+      },
+      "academic": {
+        "national renewable energy laboratory": 5,
+        "university of wisconsin-madison": 1,
+        "irasus technologies private limited": 1,
+        "pv performance labs": 1,
+        "epfl": 1
+      },
+      "utility": {
+        "southern company": 1
+      },
+      "research_organization": {
+        "national institute of standards and technology": 1
+      }
+    },
+    "top_locations": {
+      "Denver, CO": 5,
+      "Golden, CO": 3,
+      "United States of America": 3,
+      "Cologne, Germany": 2,
+      "Madrid, Spain": 2,
+      "Oakland, CA": 2,
+      "Canada": 2,
+      "Sydney, Australia": 2,
+      "San Francisco, CA": 2,
+      "United States": 2
+    }
+  },
+  {
+    "repo_name": "emerge",
+    "total_users": 23,
+    "classification_counts": {
+      "unknown": 16,
+      "government": 1,
+      "professional": 2,
+      "academic": 3,
+      "industry": 1
+    },
+    "contributor_class_counts": {
+      "government": 1,
+      "unknown": 1
+    },
+    "top_organizations": {
+      "github.com/national renewable energy laboratory": 1,
+      "open-energy-transition protontypes": 1,
+      "netzero ai": 1,
+      "university of pennsylvania": 1,
+      "national renewable energy laboratory": 1,
+      "paradigma solutions": 1,
+      "electric power research institute": 1
+    },
+    "organizations_by_type": {
+      "government": {
+        "github.com/national renewable energy laboratory": 1
+      },
+      "professional": {
+        "open-energy-transition protontypes": 1
+      },
+      "unknown": {
+        "netzero ai": 1,
+        "electric power research institute": 1
+      },
+      "academic": {
+        "university of pennsylvania": 1,
+        "national renewable energy laboratory": 1
+      },
+      "industry": {
+        "paradigma solutions": 1
+      }
+    },
+    "top_locations": {
+      "Canada": 2,
+      "Germany, Aachen": 1,
+      "Detroit": 1,
+      "Golden, CO": 1,
+      "Medell\u00edn - Colombia": 1,
+      "United States": 1
+    }
+  },
+  {
+    "repo_name": "PyPSA",
+    "total_users": 1888,
+    "classification_counts": {
+      "unknown": 1395,
+      "academic": 283,
+      "professional": 133,
+      "industry": 43,
+      "financial": 5,
+      "ngo": 4,
+      "utility": 4,
+      "research_organization": 16,
+      "government": 4,
+      "rto": 1
+    },
+    "contributor_class_counts": {
+      "academic": 19,
+      "unknown": 60,
+      "industry": 1,
+      "professional": 4,
+      "research_organization": 2
+    },
+    "top_organizations": {
+      "technical university of berlin": 5,
+      "delft university of technology": 4,
+      "national university of singapore": 4,
+      "open energy transition": 4,
+      "huazhong university of science and technology": 4,
+      "eth zurich": 3,
+      "dalian university of technology": 3,
+      "kth": 3,
+      "north china electric power university": 2,
+      "rl-institut": 2
+    },
+    "organizations_by_type": {
+      "unknown": {
+        "kth": 2,
+        "open energy transition": 2,
+        "jacobs": 2,
+        "ampeersenergy": 2,
+        "open-energy-transition": 2
+      },
+      "academic": {
+        "technical university of berlin": 5,
+        "delft university of technology": 4,
+        "national university of singapore": 4,
+        "huazhong university of science and technology": 4,
+        "eth zurich": 3
+      },
+      "professional": {
+        "transition-zero": 2,
+        "self-employed": 1,
+        "cmcc-foundation": 1,
+        "3vgeomatics": 1,
+        "godotengine, w4games": 1
+      },
+      "industry": {
+        "exnaton ag": 1,
+        "googlers": 1,
+        "reiner lemoine institut ggmbh": 1,
+        "skagerak kraft": 1,
+        "opus one solutions": 1
+      },
+      "financial": {
+        "rabobank": 1,
+        "imperial college london/world bank": 1,
+        "ecesis investment llc": 1,
+        "european bank for reconstruction and development": 1,
+        "morgan stanley": 1
+      },
+      "ngo": {
+        "stockholm environment institute": 1,
+        "international energy agency": 1,
+        "rmi": 1,
+        "erminc": 1
+      },
+      "utility": {
+        "gisce ti, s.l": 1,
+        "power company": 1,
+        "gisce": 1,
+        "vattenfall": 1
+      },
+      "research_organization": {
+        "starsoul science&technology": 1,
+        "deep science ventures": 1,
+        "institute for energy studies": 1,
+        "ie3-institute": 1,
+        "institute for essential services reform": 1
+      },
+      "government": {
+        "marche polytechnic university, department of industrial engineering and mathematical sciences": 1,
+        "argonne national laboratory (argonne national laboratory": 1,
+        "sandia national laboratories": 1,
+        "the university of zambia, department of physics": 1
+      },
+      "rto": {
+        "candisolarglobal": 1
+      }
+    },
+    "top_locations": {
+      "Berlin": 25,
+      "China": 19,
+      "London": 14,
+      "Germany": 11,
+      "Beijing": 9,
+      "Berlin, Germany": 8,
+      "Singapore": 8,
+      "Netherlands": 7,
+      "Shanghai": 7,
+      "Paris": 6
+    }
+  },
+  {
+    "repo_name": "System Advisor Model",
+    "total_users": 534,
+    "classification_counts": {
+      "government": 14,
+      "unknown": 414,
+      "professional": 34,
+      "industry": 23,
+      "academic": 42,
+      "research_organization": 4,
+      "ngo": 1,
+      "utility": 1,
+      "rto": 1
+    },
+    "contributor_class_counts": {
+      "unknown": 16,
+      "government": 7,
+      "research_organization": 1,
+      "academic": 3,
+      "utility": 1,
+      "professional": 1
+    },
+    "top_organizations": {
+      "national renewable energy laboratory": 14,
+      "sandia national laboratories": 3,
+      "massachusetts institute of technology": 2,
+      "dnvgl": 1,
+      "1728 solutions, llc": 1,
+      "effibem": 1,
+      "brain power software": 1,
+      "luxoft (a dxc company": 1,
+      "data & code expert experimenting with code on data": 1,
+      "technical university of berlin": 1
+    },
+    "organizations_by_type": {
+      "government": {
+        "national renewable energy laboratory": 9,
+        "sandia national laboratories": 3,
+        "chalmers university of technology - department of architecture and civil engineering": 1,
+        "llnl": 1
+      },
+      "professional": {
+        "dnvgl": 1,
+        "effibem": 1,
+        "ernst & young": 1,
+        "scallant tasmota": 1,
+        "tryhackme": 1
+      },
+      "industry": {
+        "1728 solutions, llc": 1,
+        "brain power software": 1,
+        "luxoft (a dxc company": 1,
+        "google": 1,
+        "tesla": 1
+      },
+      "unknown": {
+        "data & code expert experimenting with code on data": 1,
+        "ufpe": 1,
+        "ddmix": 1,
+        "envision energy": 1,
+        "gridtechs": 1
+      },
+      "academic": {
+        "national renewable energy laboratory": 5,
+        "massachusetts institute of technology": 2,
+        "technical university of berlin": 1,
+        "pv performance labs": 1,
+        "university of leeds": 1
+      },
+      "research_organization": {
+        "national institute of standards and technology": 1,
+        "phryk evil mad sciences, llc": 1,
+        "shenzhen institute of advanced technology, chinese academy of sciences": 1,
+        "scientific web services llc": 1
+      },
+      "ngo": {
+        "rmi": 1
+      },
+      "utility": {
+        "southern company": 1
+      },
+      "rto": {
+        "sarapisorg": 1
+      }
+    },
+    "top_locations": {
+      "Denver, CO": 6,
+      "San Francisco, CA": 4,
+      "Berlin": 4,
+      "China": 4,
+      "Boulder, CO": 4,
+      "Washington, DC": 3,
+      "United States": 3,
+      "United States of America": 3,
+      "Madrid, Spain": 2,
+      "Brazil": 2
+    }
+  },
+  {
+    "repo_name": "TIMES",
+    "total_users": 149,
+    "classification_counts": {
+      "unknown": 107,
+      "industry": 5,
+      "academic": 26,
+      "professional": 7,
+      "research_organization": 2,
+      "ngo": 2
+    },
+    "contributor_class_counts": {
+      "unknown": 3
+    },
+    "top_organizations": {
+      "peking university": 2,
+      "danish energy agency": 2,
+      "reiner lemoine institut ggmbh": 1,
+      "technical university of berlin": 1,
+      "iiasa/cmcc": 1,
+      "cmcc-foundation": 1,
+      "international institute for applied systems analysis": 1,
+      "e3": 1,
+      "universit\u00e9 de sherbrooke": 1,
+      "esma.ie": 1
+    },
+    "organizations_by_type": {
+      "industry": {
+        "danish energy agency": 2,
+        "reiner lemoine institut ggmbh": 1,
+        "shaleshake technologies": 1,
+        "tetra tech es inc": 1
+      },
+      "academic": {
+        "peking university": 2,
+        "technical university of berlin": 1,
+        "iiasa/cmcc": 1,
+        "universit\u00e9 de sherbrooke": 1,
+        "rl-institut": 1
+      },
+      "professional": {
+        "cmcc-foundation": 1,
+        "open-energy-transition protontypes": 1,
+        "sede-x": 1,
+        "windscope": 1
+      },
+      "research_organization": {
+        "international institute for applied systems analysis": 1,
+        "german aerospace center (dlr), institute of networked energy systems": 1
+      },
+      "unknown": {
+        "e3": 1,
+        "esma.ie": 1,
+        "self employee": 1,
+        "gams": 1,
+        "alliander": 1
+      },
+      "ngo": {
+        "greenpeace": 1,
+        "international energy agency": 1
+      }
+    },
+    "top_locations": {
+      "Ireland": 3,
+      "Berlin": 2,
+      "Shanghai": 2,
+      "Washington, DC": 1,
+      "Venice/Vienna": 1,
+      "Lisbon, Portugal": 1,
+      "California": 1,
+      "Barcelona, Spain": 1,
+      "Dresden, Germany": 1,
+      "Paris": 1
+    }
+  },
+  {
+    "repo_name": "GridPath",
+    "total_users": 136,
+    "classification_counts": {
+      "unknown": 101,
+      "professional": 9,
+      "academic": 18,
+      "ngo": 2,
+      "industry": 2,
+      "research_organization": 1,
+      "rto": 3
+    },
+    "contributor_class_counts": {
+      "unknown": 11,
+      "academic": 1
+    },
+    "top_organizations": {
+      "environment and climate change canada": 3,
+      "princeton university": 2,
+      "rmi": 2,
+      "catalyst-cooperative": 2,
+      "national university of singapore": 2,
+      "simon fraser university": 2,
+      "blackbird bell": 1,
+      "university of maryland": 1,
+      "zju": 1,
+      "e3": 1
+    },
+    "organizations_by_type": {
+      "professional": {
+        "blackbird bell": 1,
+        "open-energy-transition protontypes": 1,
+        "breakpoint ai": 1,
+        "self": 1,
+        "igniteutech": 1
+      },
+      "academic": {
+        "princeton university": 2,
+        "national university of singapore": 2,
+        "simon fraser university": 2,
+        "university of maryland": 1,
+        "north carolina state university": 1
+      },
+      "unknown": {
+        "environment and climate change canada": 3,
+        "zju": 1,
+        "e3": 1,
+        "dnv": 1,
+        "seitabv": 1
+      },
+      "ngo": {
+        "rmi": 2
+      },
+      "industry": {
+        "fermata energy": 1,
+        "6synct consulting": 1
+      },
+      "research_organization": {
+        "divecha centre for climate change, indian institute of science": 1
+      },
+      "rto": {
+        "dunsky energy + climate advisors": 1,
+        "ercot": 1,
+        "first principles advisory": 1
+      }
+    },
+    "top_locations": {
+      "Singapore": 3,
+      "India": 3,
+      "Boulder, CO": 2,
+      "Amsterdam": 2,
+      "Maryland, USA": 1,
+      "Hangzhou China": 1,
+      "Princeton, NJ, USA": 1,
+      "California": 1,
+      "Tucson, AZ": 1,
+      "Raleigh, NC": 1
+    }
+  },
+  {
+    "repo_name": "PowerSimulationsDynamics.jl",
+    "total_users": 228,
+    "classification_counts": {
+      "academic": 42,
+      "government": 4,
+      "professional": 17,
+      "unknown": 159,
+      "research_organization": 4,
+      "industry": 2
+    },
+    "contributor_class_counts": {
+      "academic": 2,
+      "government": 2,
+      "unknown": 8,
+      "professional": 2
+    },
+    "top_organizations": {
+      "national renewable energy laboratory": 4,
+      "north carolina state university": 1,
+      "national renewable energy laboratory (national renewable energy laboratory": 1,
+      "the university of texas at arlington": 1,
+      "massachusetts institute of technology": 1,
+      "fraunhofer iee": 1,
+      "open-energy-transition protontypes": 1,
+      "pozibl": 1,
+      "ku leuven - esat/electa": 1,
+      "inti-conicet-unr": 1
+    },
+    "organizations_by_type": {
+      "academic": {
+        "national renewable energy laboratory": 2,
+        "north carolina state university": 1,
+        "the university of texas at arlington": 1,
+        "massachusetts institute of technology": 1,
+        "fraunhofer iee": 1
+      },
+      "government": {
+        "national renewable energy laboratory": 2,
+        "national renewable energy laboratory (national renewable energy laboratory": 1,
+        "department of the air force": 1
+      },
+      "professional": {
+        "open-energy-transition protontypes": 1,
+        "sofar ocean": 1,
+        "lawrence berkeley lab": 1,
+        "psr": 1,
+        "vnodesign": 1
+      },
+      "unknown": {
+        "pozibl": 1,
+        "ku leuven - esat/electa": 1,
+        "inti-conicet-unr": 1,
+        "areahub, novvum, novvumhacks": 1,
+        "nodal-tools": 1
+      },
+      "research_organization": {
+        "institute for energy studies": 1,
+        "sintef energy research": 1,
+        "math & ai institute": 1,
+        "german aerospace center (dlr), institute of networked energy systems": 1
+      },
+      "industry": {
+        "juliahub inc": 1,
+        "numerical algorithms group": 1
+      }
+    },
+    "top_locations": {
+      "China": 3,
+      "Germany": 3,
+      "Cambridge, MA": 2,
+      "Philippines": 2,
+      "Greece": 2,
+      "United States": 2,
+      "Perth, Australia": 2,
+      "Stuttgart": 2,
+      "London, UK": 2,
+      "Berlin": 2
+    }
+  },
+  {
+    "repo_name": "SpineOpt",
+    "total_users": 100,
+    "classification_counts": {
+      "professional": 6,
+      "unknown": 67,
+      "academic": 21,
+      "industry": 2,
+      "research_organization": 2,
+      "government": 2
+    },
+    "contributor_class_counts": {
+      "unknown": 21,
+      "government": 2,
+      "academic": 2,
+      "professional": 1,
+      "research_organization": 1
+    },
+    "top_organizations": {
+      "tno": 4,
+      "energy reform": 2,
+      "national renewable energy laboratory": 2,
+      "vtt technical research centre of finland": 2,
+      "simon fraser university": 2,
+      "dtu": 2,
+      "technical university of berlin": 1,
+      "our next energy, inc": 1,
+      "nodal-tools": 1,
+      "e3": 1
+    },
+    "organizations_by_type": {
+      "academic": {
+        "national renewable energy laboratory": 2,
+        "simon fraser university": 2,
+        "energy reform": 1,
+        "technical university of berlin": 1,
+        "universit\u00e0 degli studi di genova": 1
+      },
+      "industry": {
+        "our next energy, inc": 1,
+        "carbonaltdelete": 1
+      },
+      "unknown": {
+        "tno": 2,
+        "dtu": 2,
+        "nodal-tools": 1,
+        "e3": 1,
+        "pasteur-isi": 1
+      },
+      "research_organization": {
+        "https://www.mech.kuleuven.be/en/tme/research/energy-systems-integration-modeling/people/00128861": 1,
+        "netherlands escience center": 1
+      },
+      "government": {
+        "vtt technical research centre of finland": 2
+      },
+      "professional": {
+        "tno": 2,
+        "tnei": 1,
+        "open-energy-transition protontypes": 1
+      }
+    },
+    "top_locations": {
+      "Berlin": 2,
+      "Amsterdam": 2,
+      "China": 2,
+      "Copenhagen": 2,
+      "Finland": 2,
+      "Espoo, Finland": 2,
+      "EU": 1,
+      "Dublin, Ireland | Nimes, France": 1,
+      "Denver, CO, USA": 1,
+      "Denver, Colorado ": 1
+    }
+  },
+  {
+    "repo_name": "DPSim",
+    "total_users": 131,
+    "classification_counts": {
+      "unknown": 97,
+      "professional": 8,
+      "academic": 23,
+      "research_organization": 2,
+      "industry": 1
+    },
+    "contributor_class_counts": {
+      "unknown": 20,
+      "academic": 4
+    },
+    "top_organizations": {
+      "rwth aachen university aachen": 3,
+      "canonical": 1,
+      "grid-x": 1,
+      "southeast university,nari group(sgepri": 1,
+      "the university of texas at arlington": 1,
+      "north carolina state university": 1,
+      "aalborg university": 1,
+      "fraunhofer iee": 1,
+      "open-energy-transition protontypes": 1,
+      "federal university of ceara": 1
+    },
+    "organizations_by_type": {
+      "professional": {
+        "canonical": 1,
+        "open-energy-transition protontypes": 1,
+        "myown": 1
+      },
+      "unknown": {
+        "grid-x": 1,
+        "aspentech": 1,
+        "sjtu": 1,
+        "eroots analytics": 1,
+        "machine learning engineer": 1
+      },
+      "academic": {
+        "rwth aachen university aachen": 3,
+        "southeast university,nari group(sgepri": 1,
+        "the university of texas at arlington": 1,
+        "north carolina state university": 1,
+        "aalborg university": 1
+      },
+      "research_organization": {
+        "starsoul science&technology": 1,
+        "ices, luxemborug institute of science and technology": 1
+      },
+      "industry": {
+        "electric power group, llc": 1
+      }
+    },
+    "top_locations": {
+      "Germany": 5,
+      "Aachen, Germany": 3,
+      "Aachen": 3,
+      "China": 2,
+      "Brazil": 2,
+      "Medell\u00edn, Colombia": 1,
+      "Nanjing,Jiangsu Province,China": 1,
+      "416 Yates Street, Arlington, TX 76010, USA": 1,
+      "Raleigh, NC": 1,
+      "Kassel, Germany": 1
+    }
+  },
+  {
+    "repo_name": "PowerSystems.jl",
+    "total_users": 390,
+    "classification_counts": {
+      "government": 12,
+      "unknown": 262,
+      "professional": 32,
+      "academic": 66,
+      "rto": 2,
+      "industry": 8,
+      "research_organization": 4,
+      "utility": 2,
+      "financial": 1,
+      "ngo": 1
+    },
+    "contributor_class_counts": {
+      "academic": 7,
+      "unknown": 22,
+      "government": 4,
+      "professional": 1
+    },
+    "top_organizations": {
+      "national renewable energy laboratory": 10,
+      "tsinghua university university": 3,
+      "relationalai": 2,
+      "national renewable energy laboratory (national renewable energy laboratory": 2,
+      "equilibrium energy": 2,
+      "dalian university of technology": 2,
+      "xi'an jiaotong university": 2,
+      "cornell university": 2,
+      "national renewable energy laboratory , uw": 1,
+      "ercot": 1
+    },
+    "organizations_by_type": {
+      "government": {
+        "national renewable energy laboratory": 8,
+        "national renewable energy laboratory (national renewable energy laboratory": 2,
+        "national renewable energy laboratory , uw": 1,
+        "department of the air force": 1
+      },
+      "academic": {
+        "tsinghua university university": 3,
+        "national renewable energy laboratory": 2,
+        "dalian university of technology": 2,
+        "xi'an jiaotong university": 2,
+        "cornell university": 2
+      },
+      "rto": {
+        "ercot": 1,
+        "first principles advisory": 1
+      },
+      "industry": {
+        "opus one solutions": 1,
+        "tesla": 1,
+        "self-employment, inc": 1,
+        "ethos sustainability group": 1,
+        "our next energy, inc": 1
+      },
+      "unknown": {
+        "relationalai": 2,
+        "equilibrium energy": 2,
+        "ku leuven / energyville": 1,
+        "input-output-hk": 1,
+        "psrenergy and lampspuc": 1
+      },
+      "research_organization": {
+        "starsoul science&technology": 1,
+        "institute for energy studies": 1,
+        "german aerospace center (dlr), institute of networked energy systems": 1,
+        "international institute for applied systems analysis (iiasa": 1
+      },
+      "utility": {
+        "nextera analytics": 1,
+        "orsted": 1
+      },
+      "professional": {
+        "csiro": 1,
+        "siemens": 1,
+        "project drawdown": 1,
+        "np": 1,
+        "open-energy-transition protontypes": 1
+      },
+      "financial": {
+        "rabobank": 1
+      },
+      "ngo": {
+        "rmi": 1
+      }
+    },
+    "top_locations": {
+      "China": 4,
+      "Toronto": 3,
+      "Canada": 3,
+      "Beijing, China": 3,
+      "United States": 3,
+      "Golden, CO": 3,
+      "Seattle, WA": 2,
+      "Berlin": 2,
+      "California": 2,
+      "Denver, CO": 2
+    }
+  },
+  {
+    "repo_name": "ModPowerSystems",
+    "total_users": 5,
+    "classification_counts": {
+      "professional": 1,
+      "unknown": 4
+    },
+    "contributor_class_counts": {
+      "unknown": 2
+    },
+    "top_organizations": {},
+    "organizations_by_type": {},
+    "top_locations": {
+      "Berlin": 1
+    }
+  },
+  {
+    "repo_name": "Spine Toolbox",
+    "total_users": 103,
+    "classification_counts": {
+      "professional": 9,
+      "academic": 20,
+      "unknown": 69,
+      "industry": 1,
+      "government": 2,
+      "rto": 1,
+      "research_organization": 1
+    },
+    "contributor_class_counts": {
+      "government": 1,
+      "unknown": 12,
+      "academic": 2,
+      "professional": 1,
+      "research_organization": 1
+    },
+    "top_organizations": {
+      "rl-institut": 2,
+      "vtt technical research centre of finland": 2,
+      "energy reform": 2,
+      "tno": 2,
+      "dtu": 2,
+      "technical university of berlin": 1,
+      "microsoft": 1,
+      "delft university of technology": 1,
+      "kth": 1,
+      "nodal-tools": 1
+    },
+    "organizations_by_type": {
+      "academic": {
+        "technical university of berlin": 1,
+        "delft university of technology": 1,
+        "rl-institut": 1,
+        "kth": 1,
+        "energy reform": 1
+      },
+      "industry": {
+        "microsoft": 1
+      },
+      "unknown": {
+        "dtu": 2,
+        "nodal-tools": 1,
+        "no job guy": 1,
+        "e3": 1,
+        "alliander alliander-opensource fsfe": 1
+      },
+      "professional": {
+        "open-energy-transition protontypes": 1,
+        "tno": 1,
+        "yemenpython": 1
+      },
+      "government": {
+        "vtt technical research centre of finland": 2
+      },
+      "rto": {
+        "first principles advisory": 1
+      },
+      "research_organization": {
+        "https://www.mech.kuleuven.be/en/tme/research/energy-systems-integration-modeling/people/00128861": 1
+      }
+    },
+    "top_locations": {
+      "Espoo, Finland": 2,
+      "Dublin, Ireland": 2,
+      "Copenhagen": 2,
+      "Finland": 2,
+      "Queensland, Australia": 1,
+      "Berlin": 1,
+      "Cambridge, MA": 1,
+      "Berlin/Germany": 1,
+      "Stockholm, Sweden": 1,
+      "Denver, CO": 1
+    }
+  },
+  {
+    "repo_name": "Inertia Monitor",
+    "total_users": 1,
+    "classification_counts": {
+      "government": 1
+    },
+    "contributor_class_counts": {
+      "government": 1
+    },
+    "top_organizations": {
+      "national renewable energy laboratory , uw": 1
+    },
+    "organizations_by_type": {
+      "government": {
+        "national renewable energy laboratory , uw": 1
+      }
+    },
+    "top_locations": {
+      "Seattle, WA": 1
+    }
+  },
+  {
+    "repo_name": "MATPOWER",
+    "total_users": 575,
+    "classification_counts": {
+      "professional": 39,
+      "academic": 108,
+      "research_organization": 5,
+      "industry": 11,
+      "unknown": 409,
+      "rto": 2,
+      "government": 1
+    },
+    "contributor_class_counts": {
+      "academic": 6,
+      "unknown": 6,
+      "professional": 2
+    },
+    "top_organizations": {
+      "national university of singapore": 3,
+      "southeast university": 2,
+      "los alamos national laboratory": 2,
+      "ncepu": 2,
+      "beijing institute of technology": 2,
+      "tsinghua university university": 2,
+      "shanghai jiao tong university": 2,
+      "south china university of technology": 2,
+      "north carolina state university": 1,
+      "sintef energy research": 1
+    },
+    "organizations_by_type": {
+      "academic": {
+        "national university of singapore": 3,
+        "southeast university": 2,
+        "los alamos national laboratory": 2,
+        "beijing institute of technology": 2,
+        "tsinghua university university": 2
+      },
+      "research_organization": {
+        "sintef energy research": 1,
+        "zup innovation  ita\u00fa": 1,
+        "salzburg research ltd": 1,
+        "supergrid institute": 1,
+        "pi research tech": 1
+      },
+      "industry": {
+        "universita della svizzera italiana": 1,
+        "retoflow gmbh": 1,
+        "damo academy, alibaba inc": 1,
+        "enbridge inc": 1,
+        "ethos sustainability group": 1
+      },
+      "rto": {
+        "ercot": 1,
+        "independent electricity system operator (ieso": 1
+      },
+      "unknown": {
+        "ncepu": 2,
+        "sereact.ai": 1,
+        "sues": 1,
+        "grid-x": 1,
+        "self": 1
+      },
+      "professional": {
+        "3vgeomatics": 1,
+        "cemig distribui\u00e7\u00e3o s.a": 1,
+        "gitymarket": 1,
+        "open-energy-transition protontypes": 1,
+        "centrica": 1
+      },
+      "government": {
+        "pacific northwest national laboratory (pacific northwest national laboratory": 1
+      }
+    },
+    "top_locations": {
+      "China": 5,
+      "Singapore": 5,
+      "United Kingdom": 4,
+      "Berlin": 3,
+      "Germany": 3,
+      "Beijing": 3,
+      "Beijing, China": 3,
+      "California": 2,
+      "Shanghai": 2,
+      "Rio de Janeiro, Brazil": 2
+    }
+  },
+  {
+    "repo_name": "Switch",
+    "total_users": 195,
+    "classification_counts": {
+      "unknown": 122,
+      "professional": 16,
+      "research_organization": 6,
+      "academic": 38,
+      "government": 4,
+      "industry": 6,
+      "financial": 2,
+      "ngo": 1
+    },
+    "contributor_class_counts": {
+      "research_organization": 1,
+      "unknown": 5,
+      "professional": 2,
+      "government": 1
+    },
+    "top_organizations": {
+      "stanford university": 2,
+      "uc berkeley": 2,
+      "energy quotient\u2122": 1,
+      "divecha centre for climate change, indian institute of science": 1,
+      "itson": 1,
+      "blue-marble": 1,
+      "national renewable energy laboratory": 1,
+      "talentica": 1,
+      "university of m\u00e1laga": 1,
+      "cmcc-foundation": 1
+    },
+    "organizations_by_type": {
+      "professional": {
+        "uc berkeley": 2,
+        "energy quotient\u2122": 1,
+        "cmcc-foundation": 1,
+        "tetra tech": 1,
+        "open-energy-transition protontypes": 1
+      },
+      "research_organization": {
+        "divecha centre for climate change, indian institute of science": 1,
+        "institute for energy studies": 1,
+        "international energy research centre": 1,
+        "starsoul science&technology": 1,
+        "ifo institute and lmu munich": 1
+      },
+      "academic": {
+        "stanford university": 2,
+        "itson": 1,
+        "talentica": 1,
+        "university of m\u00e1laga": 1,
+        "the george washington university": 1
+      },
+      "unknown": {
+        "blue-marble": 1,
+        "singularity-energy": 1,
+        "cqu": 1,
+        "nirvanatech": 1,
+        "acep-uaf  acep-devops": 1
+      },
+      "government": {
+        "national renewable energy laboratory": 1,
+        "usepa": 1,
+        "national renewable energy laboratory, ut austin": 1,
+        "national renewable energy laboratory (national renewable energy laboratory": 1
+      },
+      "industry": {
+        "tesla": 1,
+        "our next energy, inc": 1,
+        "genomics plc": 1,
+        "ethos sustainability group": 1,
+        "united states environmental protection agency": 1
+      },
+      "financial": {
+        "u. alaska fairbanks": 1,
+        "imperial college london/world bank": 1
+      },
+      "ngo": {
+        "rmi": 1
+      }
+    },
+    "top_locations": {
+      "Berlin": 2,
+      "Fairbanks, Alaska": 2,
+      "Cambridge, MA": 2,
+      "Washington, DC": 2,
+      "London, UK": 2,
+      "Beijing": 2,
+      "Honolulu, HI": 1,
+      "Bangalore": 1,
+      "Austin, TX": 1,
+      "San Francisco": 1
+    }
+  },
+  {
+    "repo_name": "Antares",
+    "total_users": 103,
+    "classification_counts": {
+      "professional": 8,
+      "research_organization": 1,
+      "academic": 9,
+      "unknown": 80,
+      "financial": 1,
+      "industry": 4
+    },
+    "contributor_class_counts": {
+      "unknown": 23,
+      "professional": 3,
+      "industry": 1
+    },
+    "top_organizations": {
+      "rte": 3,
+      "supergrid institute": 1,
+      "university of strathclyde": 1,
+      "rabobank": 1,
+      "securityscorecard": 1,
+      "archlinux wikimedia": 1,
+      "open-energy-transition protontypes": 1,
+      "fraunhofer iee": 1,
+      "gitguardian": 1,
+      "federal university of ceara": 1
+    },
+    "organizations_by_type": {
+      "research_organization": {
+        "supergrid institute": 1
+      },
+      "academic": {
+        "university of strathclyde": 1,
+        "securityscorecard": 1,
+        "fraunhofer iee": 1,
+        "federal university of ceara": 1,
+        "ait austrian institute of technology gmbh": 1
+      },
+      "financial": {
+        "rabobank": 1
+      },
+      "unknown": {
+        "rte": 2,
+        "archlinux wikimedia": 1,
+        "universe": 1,
+        "skilld": 1,
+        "rte-france": 1
+      },
+      "professional": {
+        "open-energy-transition protontypes": 1,
+        "gitguardian": 1,
+        "fico": 1,
+        "rte": 1,
+        "meritis": 1
+      },
+      "industry": {
+        "tetra tech es inc": 1,
+        "group of companies mesloubi": 1,
+        "abak consulting": 1,
+        "redstork solutions": 1
+      }
+    },
+    "top_locations": {
+      "Paris": 9,
+      "France": 4,
+      "Paris, France": 2,
+      "Tokyo, Japan": 1,
+      "Lyon": 1,
+      "Glasgow, Scotland": 1,
+      "Netherlands": 1,
+      "United States": 1,
+      "Kawaiian Islands": 1,
+      "paris": 1
+    }
+  },
+  {
+    "repo_name": "ExaGO",
+    "total_users": 96,
+    "classification_counts": {
+      "academic": 21,
+      "professional": 7,
+      "unknown": 60,
+      "government": 6,
+      "industry": 2
+    },
+    "contributor_class_counts": {
+      "government": 3,
+      "industry": 1,
+      "unknown": 7,
+      "academic": 2,
+      "professional": 1
+    },
+    "top_organizations": {
+      "pacific northwest national laboratory": 4,
+      "oak ridge national laboratory": 2,
+      "north carolina state university": 1,
+      "southeast university": 1,
+      "washington state university": 1,
+      "hku": 1,
+      "aws": 1,
+      "open-energy-transition protontypes": 1,
+      "university of bergen": 1,
+      "sogang univ. nicelab https://nice.sogang.ac.kr": 1
+    },
+    "organizations_by_type": {
+      "academic": {
+        "pacific northwest national laboratory": 2,
+        "north carolina state university": 1,
+        "southeast university": 1,
+        "washington state university": 1,
+        "university of bergen": 1
+      },
+      "unknown": {
+        "hku": 1,
+        "fh technikum wien": 1,
+        "sparkmeter": 1,
+        "previously uber": 1,
+        "the energy coalition": 1
+      },
+      "professional": {
+        "aws": 1,
+        "open-energy-transition protontypes": 1,
+        "iit, madras": 1,
+        "politecnico di milano": 1
+      },
+      "government": {
+        "pacific northwest national laboratory": 2,
+        "oak ridge national laboratory": 1,
+        "pacific northwest national laboratory (pacific northwest national laboratory": 1,
+        "national renewable energy laboratory": 1,
+        "lawrence livermore national laboratory, llnl": 1
+      },
+      "industry": {
+        "energy & environmental economics, inc": 1,
+        "nvidia": 1
+      }
+    },
+    "top_locations": {
+      "Atlanta, GA": 2,
+      "Raleigh, NC": 1,
+      "Nanjing": 1,
+      "Berlin": 1,
+      "Pullman, Washington": 1,
+      "Hong Kong": 1,
+      "San Francisco": 1,
+      "Richland, WA, USA": 1,
+      "Lugano, Switzerland": 1,
+      "Oak Ridge": 1
+    }
+  },
+  {
+    "repo_name": "Simplus Grid Tool",
+    "total_users": 111,
+    "classification_counts": {
+      "unknown": 88,
+      "academic": 20,
+      "professional": 3
+    },
+    "contributor_class_counts": {
+      "academic": 3,
+      "unknown": 3
+    },
+    "top_organizations": {
+      "imperial college london": 2,
+      "tsinghua university university": 2,
+      "xi'an jiaotong university": 2,
+      "home alone": 1,
+      "mpei": 1,
+      "hefei university of technology": 1,
+      "southeast university": 1,
+      "cpesvt": 1,
+      "inha university": 1,
+      "tsinghua university university - tbsi": 1
+    },
+    "organizations_by_type": {
+      "academic": {
+        "imperial college london": 2,
+        "tsinghua university university": 2,
+        "xi'an jiaotong university": 2,
+        "hefei university of technology": 1,
+        "southeast university": 1
+      },
+      "unknown": {
+        "home alone": 1,
+        "\u5408\u80a5\u5de5\u4e1a\u5927\u5b66": 1,
+        "polyu": 1,
+        "hku": 1,
+        "siemens energy": 1
+      },
+      "professional": {
+        "mpei": 1
+      }
+    },
+    "top_locations": {
+      "Beijing, China": 2,
+      "Hong Kong": 2,
+      "London": 1,
+      "Paris area, France": 1,
+      "Cairo": 1,
+      "Hangzhou": 1,
+      "China": 1,
+      "Nanjing": 1,
+      "Blacksburg": 1,
+      "Incheon": 1
+    }
+  },
+  {
+    "repo_name": "OSeMOSYS",
+    "total_users": 244,
+    "classification_counts": {
+      "academic": 40,
+      "unknown": 173,
+      "industry": 11,
+      "professional": 13,
+      "research_organization": 5,
+      "financial": 1,
+      "ngo": 1
+    },
+    "contributor_class_counts": {
+      "unknown": 7,
+      "academic": 4,
+      "professional": 1,
+      "industry": 1
+    },
+    "top_organizations": {
+      "university of victoria": 2,
+      "kth": 2,
+      "kth royal institute of technology": 1,
+      "united nations office of information and communications technology": 1,
+      "stanford university": 1,
+      "x-ion gmbh": 1,
+      "ulm university": 1,
+      "iiasa": 1,
+      "universit\u00e9 de sherbrooke": 1,
+      "danish energy agency": 1
+    },
+    "organizations_by_type": {
+      "academic": {
+        "university of victoria": 2,
+        "kth royal institute of technology": 1,
+        "stanford university": 1,
+        "ulm university": 1,
+        "universit\u00e9 de sherbrooke": 1
+      },
+      "unknown": {
+        "united nations office of information and communications technology": 1,
+        "iiasa": 1,
+        "phosphorco": 1,
+        "kth": 1,
+        "bairesdev": 1
+      },
+      "industry": {
+        "x-ion gmbh": 1,
+        "danish energy agency": 1,
+        "tesla": 1,
+        "qualcomm ai research": 1,
+        "microsoft": 1
+      },
+      "professional": {
+        "cmcc-foundation": 1,
+        "open-energy-transition protontypes": 1,
+        "sede-x": 1,
+        "softavnetworks": 1
+      },
+      "research_organization": {
+        "international institute for applied systems analysis": 1,
+        "deep science ventures": 1,
+        "research center in applied economics for development-cread": 1,
+        "institute for essential services reform": 1,
+        "institute of power engineering": 1
+      },
+      "financial": {
+        "european bank for reconstruction and development": 1
+      },
+      "ngo": {
+        "rmi": 1
+      }
+    },
+    "top_locations": {
+      "London": 5,
+      "Berlin": 5,
+      "Stockholm, Sweden": 3,
+      "Istanbul": 2,
+      "Paris": 2,
+      "Ireland": 2,
+      "Stockholm": 2,
+      "United States": 2,
+      "France": 2,
+      "Australia": 2
+    }
+  },
+  {
+    "repo_name": "CIM++",
+    "total_users": 49,
+    "classification_counts": {
+      "professional": 5,
+      "unknown": 40,
+      "academic": 3,
+      "industry": 1
+    },
+    "contributor_class_counts": {
+      "unknown": 13,
+      "industry": 1
+    },
+    "top_organizations": {
+      "freelancer": 1,
+      "canonical": 1,
+      "csg electric power research institute": 1,
+      "the university of alabama in huntsville": 1,
+      "psi software se": 1,
+      "chongqing university": 1,
+      "open-energy-transition protontypes": 1,
+      "tnei": 1,
+      "opal-rt germany": 1,
+      "ut": 1
+    },
+    "organizations_by_type": {
+      "professional": {
+        "freelancer": 1,
+        "canonical": 1,
+        "open-energy-transition protontypes": 1,
+        "tnei": 1
+      },
+      "academic": {
+        "csg electric power research institute": 1,
+        "the university of alabama in huntsville": 1,
+        "chongqing university": 1
+      },
+      "industry": {
+        "psi software se": 1
+      },
+      "unknown": {
+        "opal-rt germany": 1,
+        "ut": 1,
+        "grid-x": 1
+      }
+    },
+    "top_locations": {
+      "Germany": 2,
+      "Aachen, Germany": 2,
+      "Medell\u00edn, Colombia": 1,
+      "Guangzhou, Guangdong, China": 1,
+      "shanghai": 1,
+      "Berlin": 1,
+      "United States of America": 1,
+      "Shenzhen, China": 1,
+      "Berlin, Germany": 1,
+      "Chongqing City": 1
+    }
+  },
+  {
+    "repo_name": "ReEDS",
+    "total_users": 204,
+    "classification_counts": {
+      "unknown": 147,
+      "professional": 5,
+      "government": 5,
+      "academic": 39,
+      "industry": 5,
+      "ngo": 1,
+      "research_organization": 1,
+      "rto": 1
+    },
+    "contributor_class_counts": {
+      "unknown": 6,
+      "government": 3
+    },
+    "top_organizations": {
+      "national renewable energy laboratory": 4,
+      "electric power research institute": 2,
+      "colorado state university": 2,
+      "cornell university": 2,
+      "princeton university": 2,
+      "resources for the future": 2,
+      "e3": 1,
+      "university of washington": 1,
+      "emergi": 1,
+      "u.s. environmental protection agency": 1
+    },
+    "organizations_by_type": {
+      "unknown": {
+        "resources for the future": 2,
+        "e3": 1,
+        "emergi": 1,
+        "lydian": 1,
+        "senscio systems": 1
+      },
+      "government": {
+        "national renewable energy laboratory": 3,
+        "us department of energy": 1,
+        "national renewable energy laboratory (national renewable energy laboratory": 1
+      },
+      "academic": {
+        "colorado state university": 2,
+        "cornell university": 2,
+        "princeton university": 2,
+        "university of washington": 1,
+        "carnegie mellon university": 1
+      },
+      "industry": {
+        "u.s. environmental protection agency": 1,
+        "ethos sustainability group": 1,
+        "otto group data.works | og-dw": 1,
+        "energy + environmental economics, inc": 1,
+        "georgia center for energy solutions": 1
+      },
+      "ngo": {
+        "rmi": 1
+      },
+      "research_organization": {
+        "divecha centre for climate change, indian institute of science": 1
+      },
+      "rto": {
+        "pjm interconnection llc": 1
+      },
+      "professional": {
+        "open-energy-transition protontypes": 1,
+        "eversource energy": 1
+      }
+    },
+    "top_locations": {
+      "Washington, DC": 4,
+      "Boulder, CO": 4,
+      "Denver, CO": 2,
+      "United States": 2,
+      "Cambridge, MA": 2,
+      "California": 1,
+      "Beijing, China": 1,
+      "global": 1,
+      "Pittsburgh": 1,
+      "Fort Collins, CO, USA": 1
+    }
+  },
+  {
+    "repo_name": "HELICS",
+    "total_users": 179,
+    "classification_counts": {
+      "industry": 8,
+      "academic": 34,
+      "professional": 14,
+      "unknown": 111,
+      "government": 11,
+      "ngo": 1
+    },
+    "contributor_class_counts": {
+      "government": 7,
+      "unknown": 17,
+      "academic": 5,
+      "professional": 2,
+      "industry": 1
+    },
+    "top_organizations": {
+      "pacific northwest national laboratory": 10,
+      "national renewable energy laboratory": 5,
+      "llnl": 2,
+      "synaptecltd": 1,
+      "north carolina state university": 1,
+      "amd": 1,
+      "bizpoke": 1,
+      "aws": 1,
+      "village energy": 1,
+      "pacific northwest national laboratory (pacific northwest national laboratory": 1
+    },
+    "organizations_by_type": {
+      "industry": {
+        "synaptecltd": 1,
+        "amd": 1,
+        "village energy": 1,
+        "meta": 1,
+        "our next energy, inc": 1
+      },
+      "academic": {
+        "pacific northwest national laboratory": 8,
+        "north carolina state university": 1,
+        "aws": 1,
+        "idaholab": 1,
+        "the university of texas at arlington": 1
+      },
+      "professional": {
+        "bizpoke": 1,
+        "utilidata": 1,
+        "ecobee": 1,
+        "omer-ceylan17hotmail.com": 1
+      },
+      "government": {
+        "national renewable energy laboratory": 4,
+        "llnl": 2,
+        "pacific northwest national laboratory": 2,
+        "pacific northwest national laboratory (pacific northwest national laboratory": 1,
+        "argonne national laboratory (argonne national laboratory": 1
+      },
+      "unknown": {
+        "zju": 1,
+        "universe": 1,
+        "halden pharma": 1,
+        "edo": 1,
+        "altair": 1
+      },
+      "ngo": {
+        "rmi": 1
+      }
+    },
+    "top_locations": {
+      "Richland, WA": 3,
+      "Livermore, CA": 2,
+      "Albuquerque, NM": 2,
+      "Nanjing": 2,
+      "Portland, OR": 2,
+      "Cambridge, MA": 2,
+      "Seattle, WA": 2,
+      "China": 2,
+      "San Jose, CA": 2,
+      "UK": 1
+    }
+  }
+]

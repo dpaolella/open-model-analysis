@@ -1,0 +1,84 @@
+{
+  "stargazers": [
+    {
+      "login": "rwl",
+      "name": "Richard Lincoln",
+      "email": "r.w.lincoln@gmail.com",
+      "company": "",
+      "bio": "Power Engineer",
+      "location": "Berlin",
+      "user_type": "User",
+      "followers": 179,
+      "public_repos": 186,
+      "interaction_type": "star"
+    }
+  ],
+  "forkers": [
+    {
+      "login": "georgii-tishenin",
+      "name": "Georgii Tishenin",
+      "email": "",
+      "company": "",
+      "bio": "",
+      "location": "",
+      "user_type": "User",
+      "followers": 0,
+      "public_repos": 2,
+      "interaction_type": "fork"
+    },
+    {
+      "login": "modelica-3rdparty",
+      "name": "Modelica 3rd-party libraries",
+      "email": "",
+      "company": "",
+      "bio": "",
+      "location": "",
+      "user_type": "Organization",
+      "followers": 60,
+      "public_repos": 135,
+      "interaction_type": "fork"
+    }
+  ],
+  "contributors": [
+    {
+      "login": "m-mirz",
+      "name": "Markus Mirz",
+      "email": "",
+      "company": "",
+      "bio": "",
+      "location": "",
+      "user_type": "User",
+      "followers": 21,
+      "public_repos": 19,
+      "interaction_type": "contributor",
+      "contributions": 10
+    },
+    {
+      "login": "dinkelbachjan",
+      "name": "Jan Dinkelbach",
+      "email": "",
+      "company": "",
+      "bio": "",
+      "location": "",
+      "user_type": "User",
+      "followers": 0,
+      "public_repos": 6,
+      "interaction_type": "contributor",
+      "contributions": 1
+    }
+  ],
+  "watchers": [
+    {
+      "login": "rwl",
+      "name": "Richard Lincoln",
+      "email": "r.w.lincoln@gmail.com",
+      "company": "",
+      "bio": "Power Engineer",
+      "location": "Berlin",
+      "user_type": "User",
+      "followers": 179,
+      "public_repos": 186,
+      "interaction_type": "watcher"
+    }
+  ]
+}

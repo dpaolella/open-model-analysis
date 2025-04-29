@@ -1,0 +1,12 @@
+   streamlit
+   pandas
+   numpy
+   matplotlib
+   seaborn
+   plotly
+   PyGithub
+   python-dotenv
+   requests
+   tqdm
+   pycountry
+   geopy
