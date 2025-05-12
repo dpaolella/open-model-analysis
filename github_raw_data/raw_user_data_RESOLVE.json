@@ -10,7 +10,11 @@
       "user_type": "User",
       "followers": 2,
       "public_repos": 9,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "normalized_org_name": "princeton university",
+      "org_match_confidence": 1.0,
+      "classification": "academic",
+      "dashboard_org_name": "Princeton University"
     },
     {
       "login": "pauljgasper",
@@ -22,7 +26,8 @@
       "user_type": "User",
       "followers": 11,
       "public_repos": 6,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "classification": "unknown"
     },
     {
       "login": "Ly0n",
@@ -34,7 +39,11 @@
       "user_type": "User",
       "followers": 295,
       "public_repos": 120,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "normalized_org_name": "open energy transition @protontypes",
+      "org_match_confidence": 1.0,
+      "classification": "industry",
+      "dashboard_org_name": "@open-energy-transition @protontypes"
     },
     {
       "login": "gutzbenj",
@@ -46,7 +55,11 @@
       "user_type": "User",
       "followers": 146,
       "public_repos": 25,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "normalized_org_name": "otto",
+      "org_match_confidence": 1.0,
+      "classification": "unknown",
+      "dashboard_org_name": "Otto Group data.works | @OG-DW"
     },
     {
       "login": "rpiatt",
@@ -58,7 +71,8 @@
       "user_type": "User",
       "followers": 1,
       "public_repos": 2,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "classification": "unknown"
     }
   ],
   "forkers": [
@@ -72,7 +86,8 @@
       "user_type": "User",
       "followers": 0,
       "public_repos": 1,
-      "interaction_type": "fork"
+      "interaction_type": "fork",
+      "classification": "unknown"
     },
     {
       "login": "liyangw6",
@@ -84,7 +99,8 @@
       "user_type": "User",
       "followers": 1,
       "public_repos": 3,
-      "interaction_type": "fork"
+      "interaction_type": "fork",
+      "classification": "unknown"
     }
   ],
   "contributors": [
@@ -99,7 +115,11 @@
       "followers": 9,
       "public_repos": 6,
       "interaction_type": "contributor",
-      "contributions": 80
+      "contributions": 80,
+      "normalized_org_name": "e3",
+      "org_match_confidence": 1.0,
+      "classification": "unknown",
+      "dashboard_org_name": "@e3-"
     },
     {
       "login": "github-actions[bot]",
@@ -112,7 +132,8 @@
       "followers": 0,
       "public_repos": 0,
       "interaction_type": "contributor",
-      "contributions": 5
+      "contributions": 5,
+      "classification": "unknown"
     },
     {
       "login": "sam-kramer-e3",
@@ -125,7 +146,8 @@
       "followers": 1,
       "public_repos": 0,
       "interaction_type": "contributor",
-      "contributions": 2
+      "contributions": 2,
+      "classification": "unknown"
     },
     {
       "login": "Ritvikj8",
@@ -138,7 +160,8 @@
       "followers": 0,
       "public_repos": 1,
       "interaction_type": "contributor",
-      "contributions": 1
+      "contributions": 1,
+      "classification": "unknown"
     }
   ],
   "watchers": [
@@ -152,7 +175,11 @@
       "user_type": "User",
       "followers": 2,
       "public_repos": 9,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "normalized_org_name": "princeton university",
+      "org_match_confidence": 1.0,
+      "classification": "academic",
+      "dashboard_org_name": "Princeton University"
     },
     {
       "login": "pauljgasper",
@@ -164,7 +191,8 @@
       "user_type": "User",
       "followers": 11,
       "public_repos": 6,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "classification": "unknown"
     },
     {
       "login": "Ly0n",
@@ -176,7 +204,11 @@
       "user_type": "User",
       "followers": 295,
       "public_repos": 120,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "normalized_org_name": "open energy transition @protontypes",
+      "org_match_confidence": 1.0,
+      "classification": "industry",
+      "dashboard_org_name": "@open-energy-transition @protontypes"
     },
     {
       "login": "gutzbenj",
@@ -188,7 +220,11 @@
       "user_type": "User",
       "followers": 146,
       "public_repos": 25,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "normalized_org_name": "otto",
+      "org_match_confidence": 1.0,
+      "classification": "unknown",
+      "dashboard_org_name": "Otto Group data.works | @OG-DW"
     },
     {
       "login": "rpiatt",
@@ -200,7 +236,8 @@
       "user_type": "User",
       "followers": 1,
       "public_repos": 2,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "classification": "unknown"
     }
   ]
 }

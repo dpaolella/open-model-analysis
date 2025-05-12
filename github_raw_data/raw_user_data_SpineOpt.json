@@ -10,7 +10,8 @@
       "user_type": "User",
       "followers": 22,
       "public_repos": 27,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "classification": "industry"
     },
     {
       "login": "ptsavol",
@@ -22,7 +23,8 @@
       "user_type": "User",
       "followers": 2,
       "public_repos": 7,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "classification": "unknown"
     },
     {
       "login": "DillonJ",
@@ -34,7 +36,11 @@
       "user_type": "User",
       "followers": 4,
       "public_repos": 1,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "normalized_org_name": "energy reform",
+      "org_match_confidence": 1.0,
+      "classification": "academic",
+      "dashboard_org_name": "Energy Reform"
     },
     {
       "login": "fneum",
@@ -46,7 +52,11 @@
       "user_type": "User",
       "followers": 204,
       "public_repos": 33,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "normalized_org_name": "tu berlin",
+      "org_match_confidence": 1.0,
+      "classification": "unknown",
+      "dashboard_org_name": "TU Berlin"
     },
     {
       "login": "mattirish",
@@ -58,7 +68,11 @@
       "user_type": "User",
       "followers": 10,
       "public_repos": 24,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "normalized_org_name": "our next energy inc",
+      "org_match_confidence": 1.0,
+      "classification": "industry",
+      "dashboard_org_name": "Our Next Energy, Inc."
     },
     {
       "login": "jd-lara",
@@ -70,7 +84,11 @@
       "user_type": "User",
       "followers": 144,
       "public_repos": 41,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "normalized_org_name": "national renewable energy laboratory",
+      "org_match_confidence": 1.0,
+      "classification": "government",
+      "dashboard_org_name": "National Renewable Energy Laboratory"
     },
     {
       "login": "jkiviluo",
@@ -82,7 +100,11 @@
       "user_type": "User",
       "followers": 10,
       "public_repos": 4,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "normalized_org_name": "nodal tools",
+      "org_match_confidence": 1.0,
+      "classification": "unknown",
+      "dashboard_org_name": "Nodal-Tools"
     },
     {
       "login": "SarojKhanal",
@@ -94,7 +116,8 @@
       "user_type": "User",
       "followers": 3,
       "public_repos": 2,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "classification": "unknown"
     },
     {
       "login": "goroderickgo",
@@ -106,7 +129,11 @@
       "user_type": "User",
       "followers": 9,
       "public_repos": 6,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "normalized_org_name": "e3",
+      "org_match_confidence": 1.0,
+      "classification": "unknown",
+      "dashboard_org_name": "@e3-"
     },
     {
       "login": "siminh86",
@@ -118,7 +145,8 @@
       "user_type": "User",
       "followers": 1,
       "public_repos": 5,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "classification": "unknown"
     },
     {
       "login": "Mosa94",
@@ -130,7 +158,11 @@
       "user_type": "User",
       "followers": 7,
       "public_repos": 0,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "normalized_org_name": "universit\u00e0 degli studi di genova",
+      "org_match_confidence": 1.0,
+      "classification": "academic",
+      "dashboard_org_name": "Universit\u00e0 degli Studi di Genova"
     },
     {
       "login": "junglegobs",
@@ -142,7 +174,11 @@
       "user_type": "User",
       "followers": 5,
       "public_repos": 18,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "normalized_org_name": "energy systems integration group",
+      "org_match_confidence": 0.0,
+      "classification": "industry",
+      "dashboard_org_name": "Energy Systems Integration Group"
     },
     {
       "login": "Pingping1997",
@@ -154,7 +190,11 @@
       "user_type": "User",
       "followers": 9,
       "public_repos": 28,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "normalized_org_name": "tu wien",
+      "org_match_confidence": 1.0,
+      "classification": "academic",
+      "dashboard_org_name": "TU Wien"
     },
     {
       "login": "BRNNDR",
@@ -166,7 +206,8 @@
       "user_type": "User",
       "followers": 6,
       "public_repos": 2,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "classification": "unknown"
     },
     {
       "login": "hmasrur",
@@ -178,7 +219,8 @@
       "user_type": "User",
       "followers": 1,
       "public_repos": 45,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "classification": "unknown"
     },
     {
       "login": "Tasqu",
@@ -190,7 +232,11 @@
       "user_type": "User",
       "followers": 3,
       "public_repos": 5,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "normalized_org_name": "vtt technical research",
+      "org_match_confidence": 1.0,
+      "classification": "government",
+      "dashboard_org_name": "VTT Technical Research Centre of Finland"
     },
     {
       "login": "weibezahn",
@@ -202,7 +248,8 @@
       "user_type": "User",
       "followers": 15,
       "public_repos": 3,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "classification": "unknown"
     },
     {
       "login": "giannisvrochidis",
@@ -214,7 +261,8 @@
       "user_type": "User",
       "followers": 2,
       "public_repos": 3,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "classification": "unknown"
     },
     {
       "login": "thayzecosta",
@@ -226,7 +274,11 @@
       "user_type": "User",
       "followers": 15,
       "public_repos": 27,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "normalized_org_name": "university of campinas (unicamp)",
+      "org_match_confidence": 1.0,
+      "classification": "academic",
+      "dashboard_org_name": "University of Campinas (UNICAMP)"
     },
     {
       "login": "pmcwhannel",
@@ -238,7 +290,11 @@
       "user_type": "User",
       "followers": 6,
       "public_repos": 9,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "normalized_org_name": "simon fraser university",
+      "org_match_confidence": 1.0,
+      "classification": "academic",
+      "dashboard_org_name": "Simon Fraser University"
     },
     {
       "login": "scdhulipala",
@@ -250,7 +306,11 @@
       "user_type": "User",
       "followers": 7,
       "public_repos": 5,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "normalized_org_name": "national renewable energy laboratory",
+      "org_match_confidence": 1.0,
+      "classification": "government",
+      "dashboard_org_name": "National Renewable Energy Laboratory"
     },
     {
       "login": "jalving",
@@ -262,7 +322,11 @@
       "user_type": "User",
       "followers": 44,
       "public_repos": 35,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "normalized_org_name": "pasteur isi",
+      "org_match_confidence": 1.0,
+      "classification": "unknown",
+      "dashboard_org_name": "Pasteur-ISI"
     },
     {
       "login": "pherodeon",
@@ -274,7 +338,8 @@
       "user_type": "User",
       "followers": 1,
       "public_repos": 4,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "classification": "unknown"
     },
     {
       "login": "trobob",
@@ -286,7 +351,8 @@
       "user_type": "User",
       "followers": 0,
       "public_repos": 0,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "classification": "unknown"
     },
     {
       "login": "attila-balint-kul",
@@ -298,7 +364,8 @@
       "user_type": "User",
       "followers": 3,
       "public_repos": 7,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "classification": "unknown"
     },
     {
       "login": "datejada",
@@ -310,7 +377,11 @@
       "user_type": "User",
       "followers": 50,
       "public_repos": 35,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "normalized_org_name": "tno",
+      "org_match_confidence": 1.0,
+      "classification": "unknown",
+      "dashboard_org_name": "TNO"
     },
     {
       "login": "Sandalots",
@@ -322,7 +393,8 @@
       "user_type": "User",
       "followers": 442,
       "public_repos": 15,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "classification": "unknown"
     },
     {
       "login": "JiuBanA1",
@@ -334,7 +406,8 @@
       "user_type": "User",
       "followers": 940,
       "public_repos": 16,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "classification": "unknown"
     },
     {
       "login": "rwl",
@@ -346,7 +419,8 @@
       "user_type": "User",
       "followers": 179,
       "public_repos": 186,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "classification": "industry"
     },
     {
       "login": "metab0t",
@@ -358,7 +432,11 @@
       "user_type": "User",
       "followers": 80,
       "public_repos": 64,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "normalized_org_name": "hefei university of technology",
+      "org_match_confidence": 1.0,
+      "classification": "academic",
+      "dashboard_org_name": "Hefei University of Technology"
     },
     {
       "login": "sanglinwei",
@@ -370,7 +448,11 @@
       "user_type": "User",
       "followers": 90,
       "public_repos": 97,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "normalized_org_name": "southeast university",
+      "org_match_confidence": 1.0,
+      "classification": "academic",
+      "dashboard_org_name": "Southeast University"
     },
     {
       "login": "tokorte",
@@ -382,7 +464,8 @@
       "user_type": "User",
       "followers": 0,
       "public_repos": 0,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "classification": "unknown"
     },
     {
       "login": "Henryutd2021",
@@ -394,7 +477,8 @@
       "user_type": "User",
       "followers": 1,
       "public_repos": 23,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "classification": "unknown"
     },
     {
       "login": "nnhjy",
@@ -406,7 +490,11 @@
       "user_type": "User",
       "followers": 3,
       "public_repos": 12,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "normalized_org_name": "eth zurich",
+      "org_match_confidence": 1.0,
+      "classification": "academic",
+      "dashboard_org_name": "Eth Zurich"
     },
     {
       "login": "Yan457",
@@ -418,7 +506,8 @@
       "user_type": "User",
       "followers": 0,
       "public_repos": 0,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "classification": "unknown"
     },
     {
       "login": "Petr365",
@@ -430,7 +519,8 @@
       "user_type": "User",
       "followers": 0,
       "public_repos": 0,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "classification": "unknown"
     },
     {
       "login": "Omar-Usmani",
@@ -442,7 +532,11 @@
       "user_type": "User",
       "followers": 1,
       "public_repos": 1,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "normalized_org_name": "tno",
+      "org_match_confidence": 1.0,
+      "classification": "industry",
+      "dashboard_org_name": "TNO"
     },
     {
       "login": "thomastu",
@@ -454,7 +548,8 @@
       "user_type": "User",
       "followers": 23,
       "public_repos": 34,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "classification": "unknown"
     },
     {
       "login": "nicofeuch",
@@ -466,7 +561,8 @@
       "user_type": "User",
       "followers": 0,
       "public_repos": 1,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "classification": "unknown"
     },
     {
       "login": "simonzollner",
@@ -478,7 +574,8 @@
       "user_type": "User",
       "followers": 3,
       "public_repos": 9,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "classification": "unknown"
     },
     {
       "login": "eliascarv",
@@ -490,7 +587,8 @@
       "user_type": "User",
       "followers": 212,
       "public_repos": 28,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "classification": "academic"
     },
     {
       "login": "Mathias157",
@@ -502,7 +600,11 @@
       "user_type": "User",
       "followers": 0,
       "public_repos": 16,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "normalized_org_name": "technical university of denmark",
+      "org_match_confidence": 0.0,
+      "classification": "academic",
+      "dashboard_org_name": "Technical University Of Denmark"
     },
     {
       "login": "sarah-sheehy-tnei",
@@ -514,7 +616,11 @@
       "user_type": "User",
       "followers": 0,
       "public_repos": 0,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "normalized_org_name": "tnei",
+      "org_match_confidence": 1.0,
+      "classification": "professional",
+      "dashboard_org_name": "TNEI"
     },
     {
       "login": "marto12",
@@ -526,7 +632,8 @@
       "user_type": "User",
       "followers": 3,
       "public_repos": 0,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "classification": "unknown"
     },
     {
       "login": "boyuan276",
@@ -538,7 +645,11 @@
       "user_type": "User",
       "followers": 27,
       "public_repos": 21,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "normalized_org_name": "cornell university",
+      "org_match_confidence": 1.0,
+      "classification": "academic",
+      "dashboard_org_name": "Cornell University"
     },
     {
       "login": "pywugate",
@@ -550,7 +661,8 @@
       "user_type": "User",
       "followers": 10,
       "public_repos": 10,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "classification": "unknown"
     },
     {
       "login": "xhyuuuu",
@@ -562,7 +674,8 @@
       "user_type": "User",
       "followers": 1,
       "public_repos": 0,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "classification": "unknown"
     },
     {
       "login": "mzy2240",
@@ -574,7 +687,11 @@
       "user_type": "User",
       "followers": 48,
       "public_repos": 222,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "normalized_org_name": "drw",
+      "org_match_confidence": 1.0,
+      "classification": "academic",
+      "dashboard_org_name": "DRW"
     },
     {
       "login": "Prvnkmr130",
@@ -586,7 +703,8 @@
       "user_type": "User",
       "followers": 2,
       "public_repos": 0,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "classification": "unknown"
     },
     {
       "login": "alex-robinson",
@@ -598,7 +716,11 @@
       "user_type": "User",
       "followers": 28,
       "public_repos": 41,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "normalized_org_name": "alfred wegener",
+      "org_match_confidence": 1.0,
+      "classification": "unknown",
+      "dashboard_org_name": "Alfred Wegener Institute, Helmholtz Centre for Polar and Marine Research"
     },
     {
       "login": "atemmo",
@@ -610,7 +732,8 @@
       "user_type": "User",
       "followers": 12,
       "public_repos": 24,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "classification": "unknown"
     },
     {
       "login": "Sunyingyun",
@@ -622,7 +745,8 @@
       "user_type": "User",
       "followers": 1,
       "public_repos": 0,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "classification": "unknown"
     },
     {
       "login": "DavidPozo",
@@ -634,7 +758,11 @@
       "user_type": "User",
       "followers": 9,
       "public_repos": 4,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "normalized_org_name": "jrc",
+      "org_match_confidence": 1.0,
+      "classification": "academic",
+      "dashboard_org_name": "JRC"
     },
     {
       "login": "xuwkk",
@@ -646,7 +774,11 @@
       "user_type": "User",
       "followers": 65,
       "public_repos": 17,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "normalized_org_name": "imperial college london",
+      "org_match_confidence": 1.0,
+      "classification": "academic",
+      "dashboard_org_name": "Imperial College London"
     },
     {
       "login": "AlexanderHoogsteyn",
@@ -658,7 +790,11 @@
       "user_type": "User",
       "followers": 4,
       "public_repos": 7,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "normalized_org_name": "ku leuven",
+      "org_match_confidence": 1.0,
+      "classification": "unknown",
+      "dashboard_org_name": "KU Leuven"
     },
     {
       "login": "PavelDergachev",
@@ -670,7 +806,8 @@
       "user_type": "User",
       "followers": 4,
       "public_repos": 7,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "classification": "unknown"
     },
     {
       "login": "Sush1090",
@@ -682,7 +819,8 @@
       "user_type": "User",
       "followers": 7,
       "public_repos": 7,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "classification": "unknown"
     },
     {
       "login": "ManOntheWindows",
@@ -694,7 +832,8 @@
       "user_type": "User",
       "followers": 1,
       "public_repos": 13,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "classification": "unknown"
     },
     {
       "login": "trevorb1",
@@ -706,7 +845,11 @@
       "user_type": "User",
       "followers": 49,
       "public_repos": 14,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "normalized_org_name": "simon fraser university",
+      "org_match_confidence": 1.0,
+      "classification": "academic",
+      "dashboard_org_name": "Simon Fraser University"
     },
     {
       "login": "eduardosalaz",
@@ -718,7 +861,11 @@
       "user_type": "User",
       "followers": 45,
       "public_repos": 65,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "normalized_org_name": "pepsico/bravos energ\u00eda",
+      "org_match_confidence": 1.0,
+      "classification": "unknown",
+      "dashboard_org_name": "PepsiCo/Bravos Energ\u00eda"
     },
     {
       "login": "Zhouwkk",
@@ -730,7 +877,8 @@
       "user_type": "User",
       "followers": 0,
       "public_repos": 2,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "classification": "unknown"
     },
     {
       "login": "Ly0n",
@@ -742,7 +890,11 @@
       "user_type": "User",
       "followers": 295,
       "public_repos": 120,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "normalized_org_name": "open energy transition @protontypes",
+      "org_match_confidence": 1.0,
+      "classification": "industry",
+      "dashboard_org_name": "@open-energy-transition @protontypes"
     },
     {
       "login": "alisonk103",
@@ -754,7 +906,8 @@
       "user_type": "User",
       "followers": 0,
       "public_repos": 0,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "classification": "unknown"
     },
     {
       "login": "mgrabovsky",
@@ -766,7 +919,11 @@
       "user_type": "User",
       "followers": 28,
       "public_repos": 37,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "normalized_org_name": "fakta o klimatu v\u0161e",
+      "org_match_confidence": 1.0,
+      "classification": "unknown",
+      "dashboard_org_name": "Fakta o klimatu, V\u0160E"
     },
     {
       "login": "ktehranchi",
@@ -778,7 +935,11 @@
       "user_type": "User",
       "followers": 26,
       "public_repos": 10,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "normalized_org_name": "stanford university",
+      "org_match_confidence": 1.0,
+      "classification": "academic",
+      "dashboard_org_name": "Stanford University"
     },
     {
       "login": "Mailisyorlik",
@@ -790,7 +951,11 @@
       "user_type": "User",
       "followers": 2,
       "public_repos": 17,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "normalized_org_name": "carbon direct",
+      "org_match_confidence": 1.0,
+      "classification": "unknown",
+      "dashboard_org_name": "Carbon Direct"
     },
     {
       "login": "slwu89",
@@ -802,7 +967,11 @@
       "user_type": "User",
       "followers": 84,
       "public_repos": 110,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "normalized_org_name": "mrc ide @dd harp",
+      "org_match_confidence": 1.0,
+      "classification": "unknown",
+      "dashboard_org_name": "@mrc-ide  @dd-harp"
     },
     {
       "login": "koneill-lboro",
@@ -814,7 +983,8 @@
       "user_type": "User",
       "followers": 0,
       "public_repos": 5,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "classification": "academic"
     }
   ],
   "forkers": [
@@ -828,7 +998,8 @@
       "user_type": "User",
       "followers": 1,
       "public_repos": 5,
-      "interaction_type": "fork"
+      "interaction_type": "fork",
+      "classification": "unknown"
     },
     {
       "login": "silky",
@@ -840,7 +1011,8 @@
       "user_type": "User",
       "followers": 614,
       "public_repos": 4213,
-      "interaction_type": "fork"
+      "interaction_type": "fork",
+      "classification": "unknown"
     },
     {
       "login": "EnergySystemAnalysis-ETH",
@@ -852,7 +1024,8 @@
       "user_type": "Organization",
       "followers": 2,
       "public_repos": 3,
-      "interaction_type": "fork"
+      "interaction_type": "fork",
+      "classification": "unknown"
     },
     {
       "login": "joaquimg",
@@ -864,7 +1037,8 @@
       "user_type": "User",
       "followers": 125,
       "public_repos": 59,
-      "interaction_type": "fork"
+      "interaction_type": "fork",
+      "classification": "unknown"
     },
     {
       "login": "EdwarRL",
@@ -876,7 +1050,8 @@
       "user_type": "User",
       "followers": 1,
       "public_repos": 27,
-      "interaction_type": "fork"
+      "interaction_type": "fork",
+      "classification": "unknown"
     },
     {
       "login": "dazer-chen",
@@ -888,7 +1063,8 @@
       "user_type": "User",
       "followers": 0,
       "public_repos": 429,
-      "interaction_type": "fork"
+      "interaction_type": "fork",
+      "classification": "unknown"
     },
     {
       "login": "abelsiqueira",
@@ -900,7 +1076,11 @@
       "user_type": "User",
       "followers": 310,
       "public_repos": 371,
-      "interaction_type": "fork"
+      "interaction_type": "fork",
+      "normalized_org_name": "netherlands escience",
+      "org_match_confidence": 1.0,
+      "classification": "unknown",
+      "dashboard_org_name": "Netherlands eScience Center"
     },
     {
       "login": "clizbe",
@@ -912,7 +1092,11 @@
       "user_type": "User",
       "followers": 2,
       "public_repos": 14,
-      "interaction_type": "fork"
+      "interaction_type": "fork",
+      "normalized_org_name": "tno",
+      "org_match_confidence": 1.0,
+      "classification": "unknown",
+      "dashboard_org_name": "TNO"
     },
     {
       "login": "mihlema",
@@ -924,7 +1108,8 @@
       "user_type": "User",
       "followers": 0,
       "public_repos": 1,
-      "interaction_type": "fork"
+      "interaction_type": "fork",
+      "classification": "unknown"
     },
     {
       "login": "JaKehrl",
@@ -936,7 +1121,8 @@
       "user_type": "User",
       "followers": 0,
       "public_repos": 4,
-      "interaction_type": "fork"
+      "interaction_type": "fork",
+      "classification": "unknown"
     },
     {
       "login": "gitter-badger",
@@ -948,7 +1134,11 @@
       "user_type": "User",
       "followers": 595,
       "public_repos": 38286,
-      "interaction_type": "fork"
+      "interaction_type": "fork",
+      "normalized_org_name": "gitter",
+      "org_match_confidence": 1.0,
+      "classification": "unknown",
+      "dashboard_org_name": "Gitter"
     },
     {
       "login": "lilanger",
@@ -960,7 +1150,11 @@
       "user_type": "User",
       "followers": 9,
       "public_repos": 13,
-      "interaction_type": "fork"
+      "interaction_type": "fork",
+      "normalized_org_name": "technical university of denmark",
+      "org_match_confidence": 0.0,
+      "classification": "academic",
+      "dashboard_org_name": "Technical University Of Denmark"
     },
     {
       "login": "josefkoell",
@@ -972,7 +1166,8 @@
       "user_type": "User",
       "followers": 0,
       "public_repos": 1,
-      "interaction_type": "fork"
+      "interaction_type": "fork",
+      "classification": "unknown"
     },
     {
       "login": "gSaenzt",
@@ -984,7 +1179,8 @@
       "user_type": "User",
       "followers": 1,
       "public_repos": 65,
-      "interaction_type": "fork"
+      "interaction_type": "fork",
+      "classification": "unknown"
     },
     {
       "login": "ymizero",
@@ -996,7 +1192,8 @@
       "user_type": "User",
       "followers": 0,
       "public_repos": 2,
-      "interaction_type": "fork"
+      "interaction_type": "fork",
+      "classification": "unknown"
     },
     {
       "login": "hhoeschle",
@@ -1008,7 +1205,11 @@
       "user_type": "User",
       "followers": 5,
       "public_repos": 6,
-      "interaction_type": "fork"
+      "interaction_type": "fork",
+      "normalized_org_name": "carbonaltdelete",
+      "org_match_confidence": 1.0,
+      "classification": "professional",
+      "dashboard_org_name": "@CarbonAltDelete"
     },
     {
       "login": "mhdella",
@@ -1020,7 +1221,11 @@
       "user_type": "User",
       "followers": 121,
       "public_repos": 784,
-      "interaction_type": "fork"
+      "interaction_type": "fork",
+      "normalized_org_name": "university of north carolina at charlotte",
+      "org_match_confidence": 0.0,
+      "classification": "academic",
+      "dashboard_org_name": "University Of North Carolina At Charlotte"
     }
   ],
   "contributors": [
@@ -1035,7 +1240,11 @@
       "followers": 2,
       "public_repos": 2,
       "interaction_type": "contributor",
-      "contributions": 1049
+      "contributions": 1049,
+      "normalized_org_name": "energy reform",
+      "org_match_confidence": 1.0,
+      "classification": "unknown",
+      "dashboard_org_name": "Energy Reform"
     },
     {
       "login": "Tasqu",
@@ -1048,7 +1257,11 @@
       "followers": 3,
       "public_repos": 5,
       "interaction_type": "contributor",
-      "contributions": 560
+      "contributions": 560,
+      "normalized_org_name": "vtt technical research",
+      "org_match_confidence": 1.0,
+      "classification": "government",
+      "dashboard_org_name": "VTT Technical Research Centre of Finland"
     },
     {
       "login": "DillonJ",
@@ -1061,7 +1274,11 @@
       "followers": 4,
       "public_repos": 1,
       "interaction_type": "contributor",
-      "contributions": 272
+      "contributions": 272,
+      "normalized_org_name": "energy reform",
+      "org_match_confidence": 1.0,
+      "classification": "academic",
+      "dashboard_org_name": "Energy Reform"
     },
     {
       "login": "nnhjy",
@@ -1074,7 +1291,11 @@
       "followers": 3,
       "public_repos": 12,
       "interaction_type": "contributor",
-      "contributions": 249
+      "contributions": 249,
+      "normalized_org_name": "eth zurich",
+      "org_match_confidence": 1.0,
+      "classification": "academic",
+      "dashboard_org_name": "Eth Zurich"
     },
     {
       "login": "mihlema",
@@ -1087,7 +1308,8 @@
       "followers": 0,
       "public_repos": 1,
       "interaction_type": "contributor",
-      "contributions": 57
+      "contributions": 57,
+      "classification": "unknown"
     },
     {
       "login": "tarskul",
@@ -1100,7 +1322,8 @@
       "followers": 1,
       "public_repos": 2,
       "interaction_type": "contributor",
-      "contributions": 52
+      "contributions": 52,
+      "classification": "unknown"
     },
     {
       "login": "jkiviluo",
@@ -1113,7 +1336,11 @@
       "followers": 10,
       "public_repos": 4,
       "interaction_type": "contributor",
-      "contributions": 42
+      "contributions": 42,
+      "normalized_org_name": "nodal tools",
+      "org_match_confidence": 1.0,
+      "classification": "unknown",
+      "dashboard_org_name": "Nodal-Tools"
     },
     {
       "login": "datejada",
@@ -1126,7 +1353,11 @@
       "followers": 50,
       "public_repos": 35,
       "interaction_type": "contributor",
-      "contributions": 38
+      "contributions": 38,
+      "normalized_org_name": "tno",
+      "org_match_confidence": 1.0,
+      "classification": "unknown",
+      "dashboard_org_name": "TNO"
     },
     {
       "login": "gnawin",
@@ -1139,7 +1370,11 @@
       "followers": 2,
       "public_repos": 6,
       "interaction_type": "contributor",
-      "contributions": 37
+      "contributions": 37,
+      "normalized_org_name": "tno",
+      "org_match_confidence": 1.0,
+      "classification": "industry",
+      "dashboard_org_name": "TNO"
     },
     {
       "login": "steffenkaminski",
@@ -1152,7 +1387,8 @@
       "followers": 0,
       "public_repos": 3,
       "interaction_type": "contributor",
-      "contributions": 30
+      "contributions": 30,
+      "classification": "unknown"
     },
     {
       "login": "KrisPoncelet",
@@ -1165,7 +1401,8 @@
       "followers": 0,
       "public_repos": 2,
       "interaction_type": "contributor",
-      "contributions": 27
+      "contributions": 27,
+      "classification": "unknown"
     },
     {
       "login": "nhniina",
@@ -1178,7 +1415,8 @@
       "followers": 0,
       "public_repos": 0,
       "interaction_type": "contributor",
-      "contributions": 25
+      "contributions": 25,
+      "classification": "unknown"
     },
     {
       "login": "KristofPhillips95",
@@ -1191,7 +1429,8 @@
       "followers": 0,
       "public_repos": 11,
       "interaction_type": "contributor",
-      "contributions": 24
+      "contributions": 24,
+      "classification": "unknown"
     },
     {
       "login": "clizbe",
@@ -1204,7 +1443,11 @@
       "followers": 2,
       "public_repos": 14,
       "interaction_type": "contributor",
-      "contributions": 22
+      "contributions": 22,
+      "normalized_org_name": "tno",
+      "org_match_confidence": 1.0,
+      "classification": "unknown",
+      "dashboard_org_name": "TNO"
     },
     {
       "login": "erkkar",
@@ -1217,7 +1460,8 @@
       "followers": 1,
       "public_repos": 10,
       "interaction_type": "contributor",
-      "contributions": 12
+      "contributions": 12,
+      "classification": "unknown"
     },
     {
       "login": "PerVenn",
@@ -1230,7 +1474,11 @@
       "followers": 0,
       "public_repos": 0,
       "interaction_type": "contributor",
-      "contributions": 11
+      "contributions": 11,
+      "normalized_org_name": "vtt",
+      "org_match_confidence": 1.0,
+      "classification": "unknown",
+      "dashboard_org_name": "VTT"
     },
     {
       "login": "Mastomaki",
@@ -1243,7 +1491,8 @@
       "followers": 0,
       "public_repos": 0,
       "interaction_type": "contributor",
-      "contributions": 8
+      "contributions": 8,
+      "classification": "unknown"
     },
     {
       "login": "github-actions[bot]",
@@ -1256,7 +1505,8 @@
       "followers": 0,
       "public_repos": 0,
       "interaction_type": "contributor",
-      "contributions": 7
+      "contributions": 7,
+      "classification": "unknown"
     },
     {
       "login": "TimMertens",
@@ -1269,7 +1519,8 @@
       "followers": 0,
       "public_repos": 0,
       "interaction_type": "contributor",
-      "contributions": 6
+      "contributions": 6,
+      "classification": "unknown"
     },
     {
       "login": "JustinasJas",
@@ -1282,7 +1533,8 @@
       "followers": 0,
       "public_repos": 0,
       "interaction_type": "contributor",
-      "contributions": 5
+      "contributions": 5,
+      "classification": "unknown"
     },
     {
       "login": "trobob",
@@ -1295,7 +1547,8 @@
       "followers": 0,
       "public_repos": 0,
       "interaction_type": "contributor",
-      "contributions": 3
+      "contributions": 3,
+      "classification": "unknown"
     },
     {
       "login": "soininen",
@@ -1308,7 +1561,11 @@
       "followers": 2,
       "public_repos": 1,
       "interaction_type": "contributor",
-      "contributions": 2
+      "contributions": 2,
+      "normalized_org_name": "vtt technical research",
+      "org_match_confidence": 1.0,
+      "classification": "government",
+      "dashboard_org_name": "VTT Technical Research Centre of Finland"
     },
     {
       "login": "abelsiqueira",
@@ -1321,7 +1578,11 @@
       "followers": 310,
       "public_repos": 371,
       "interaction_type": "contributor",
-      "contributions": 2
+      "contributions": 2,
+      "normalized_org_name": "netherlands escience",
+      "org_match_confidence": 1.0,
+      "classification": "unknown",
+      "dashboard_org_name": "Netherlands eScience Center"
     },
     {
       "login": "ptsavol",
@@ -1334,7 +1595,8 @@
       "followers": 2,
       "public_repos": 7,
       "interaction_type": "contributor",
-      "contributions": 2
+      "contributions": 2,
+      "classification": "unknown"
     },
     {
       "login": "lilanger",
@@ -1347,7 +1609,11 @@
       "followers": 9,
       "public_repos": 13,
       "interaction_type": "contributor",
-      "contributions": 1
+      "contributions": 1,
+      "normalized_org_name": "technical university of denmark",
+      "org_match_confidence": 0.0,
+      "classification": "academic",
+      "dashboard_org_name": "Technical University Of Denmark"
     },
     {
       "login": "LouisFliche",
@@ -1360,7 +1626,8 @@
       "followers": 0,
       "public_repos": 0,
       "interaction_type": "contributor",
-      "contributions": 1
+      "contributions": 1,
+      "classification": "unknown"
     },
     {
       "login": "gitter-badger",
@@ -1373,7 +1640,11 @@
       "followers": 595,
       "public_repos": 38286,
       "interaction_type": "contributor",
-      "contributions": 1
+      "contributions": 1,
+      "normalized_org_name": "gitter",
+      "org_match_confidence": 1.0,
+      "classification": "unknown",
+      "dashboard_org_name": "Gitter"
     }
   ],
   "watchers": [
@@ -1387,7 +1658,8 @@
       "user_type": "User",
       "followers": 22,
       "public_repos": 27,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "classification": "industry"
     },
     {
       "login": "ptsavol",
@@ -1399,7 +1671,8 @@
       "user_type": "User",
       "followers": 2,
       "public_repos": 7,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "classification": "unknown"
     },
     {
       "login": "DillonJ",
@@ -1411,7 +1684,11 @@
       "user_type": "User",
       "followers": 4,
       "public_repos": 1,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "normalized_org_name": "energy reform",
+      "org_match_confidence": 1.0,
+      "classification": "academic",
+      "dashboard_org_name": "Energy Reform"
     },
     {
       "login": "fneum",
@@ -1423,7 +1700,11 @@
       "user_type": "User",
       "followers": 204,
       "public_repos": 33,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "normalized_org_name": "tu berlin",
+      "org_match_confidence": 1.0,
+      "classification": "unknown",
+      "dashboard_org_name": "TU Berlin"
     },
     {
       "login": "mattirish",
@@ -1435,7 +1716,11 @@
       "user_type": "User",
       "followers": 10,
       "public_repos": 24,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "normalized_org_name": "our next energy inc",
+      "org_match_confidence": 1.0,
+      "classification": "industry",
+      "dashboard_org_name": "Our Next Energy, Inc."
     },
     {
       "login": "jd-lara",
@@ -1447,7 +1732,11 @@
       "user_type": "User",
       "followers": 144,
       "public_repos": 41,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "normalized_org_name": "national renewable energy laboratory",
+      "org_match_confidence": 1.0,
+      "classification": "government",
+      "dashboard_org_name": "National Renewable Energy Laboratory"
     },
     {
       "login": "jkiviluo",
@@ -1459,7 +1748,11 @@
       "user_type": "User",
       "followers": 10,
       "public_repos": 4,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "normalized_org_name": "nodal tools",
+      "org_match_confidence": 1.0,
+      "classification": "unknown",
+      "dashboard_org_name": "Nodal-Tools"
     },
     {
       "login": "SarojKhanal",
@@ -1471,7 +1764,8 @@
       "user_type": "User",
       "followers": 3,
       "public_repos": 2,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "classification": "unknown"
     },
     {
       "login": "goroderickgo",
@@ -1483,7 +1777,11 @@
       "user_type": "User",
       "followers": 9,
       "public_repos": 6,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "normalized_org_name": "e3",
+      "org_match_confidence": 1.0,
+      "classification": "unknown",
+      "dashboard_org_name": "@e3-"
     },
     {
       "login": "siminh86",
@@ -1495,7 +1793,8 @@
       "user_type": "User",
       "followers": 1,
       "public_repos": 5,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "classification": "unknown"
     },
     {
       "login": "Mosa94",
@@ -1507,7 +1806,11 @@
       "user_type": "User",
       "followers": 7,
       "public_repos": 0,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "normalized_org_name": "universit\u00e0 degli studi di genova",
+      "org_match_confidence": 1.0,
+      "classification": "academic",
+      "dashboard_org_name": "Universit\u00e0 degli Studi di Genova"
     },
     {
       "login": "junglegobs",
@@ -1519,7 +1822,11 @@
       "user_type": "User",
       "followers": 5,
       "public_repos": 18,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "normalized_org_name": "energy systems integration group",
+      "org_match_confidence": 0.0,
+      "classification": "industry",
+      "dashboard_org_name": "Energy Systems Integration Group"
     },
     {
       "login": "Pingping1997",
@@ -1531,7 +1838,11 @@
       "user_type": "User",
       "followers": 9,
       "public_repos": 28,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "normalized_org_name": "tu wien",
+      "org_match_confidence": 1.0,
+      "classification": "academic",
+      "dashboard_org_name": "TU Wien"
     },
     {
       "login": "BRNNDR",
@@ -1543,7 +1854,8 @@
       "user_type": "User",
       "followers": 6,
       "public_repos": 2,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "classification": "unknown"
     },
     {
       "login": "hmasrur",
@@ -1555,7 +1867,8 @@
       "user_type": "User",
       "followers": 1,
       "public_repos": 45,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "classification": "unknown"
     },
     {
       "login": "Tasqu",
@@ -1567,7 +1880,11 @@
       "user_type": "User",
       "followers": 3,
       "public_repos": 5,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "normalized_org_name": "vtt technical research",
+      "org_match_confidence": 1.0,
+      "classification": "government",
+      "dashboard_org_name": "VTT Technical Research Centre of Finland"
     },
     {
       "login": "weibezahn",
@@ -1579,7 +1896,8 @@
       "user_type": "User",
       "followers": 15,
       "public_repos": 3,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "classification": "unknown"
     },
     {
       "login": "giannisvrochidis",
@@ -1591,7 +1909,8 @@
       "user_type": "User",
       "followers": 2,
       "public_repos": 3,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "classification": "unknown"
     },
     {
       "login": "thayzecosta",
@@ -1603,7 +1922,11 @@
       "user_type": "User",
       "followers": 15,
       "public_repos": 27,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "normalized_org_name": "university of campinas (unicamp)",
+      "org_match_confidence": 1.0,
+      "classification": "academic",
+      "dashboard_org_name": "University of Campinas (UNICAMP)"
     },
     {
       "login": "pmcwhannel",
@@ -1615,7 +1938,11 @@
       "user_type": "User",
       "followers": 6,
       "public_repos": 9,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "normalized_org_name": "simon fraser university",
+      "org_match_confidence": 1.0,
+      "classification": "academic",
+      "dashboard_org_name": "Simon Fraser University"
     },
     {
       "login": "scdhulipala",
@@ -1627,7 +1954,11 @@
       "user_type": "User",
       "followers": 7,
       "public_repos": 5,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "normalized_org_name": "national renewable energy laboratory",
+      "org_match_confidence": 1.0,
+      "classification": "government",
+      "dashboard_org_name": "National Renewable Energy Laboratory"
     },
     {
       "login": "jalving",
@@ -1639,7 +1970,11 @@
       "user_type": "User",
       "followers": 44,
       "public_repos": 35,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "normalized_org_name": "pasteur isi",
+      "org_match_confidence": 1.0,
+      "classification": "unknown",
+      "dashboard_org_name": "Pasteur-ISI"
     },
     {
       "login": "pherodeon",
@@ -1651,7 +1986,8 @@
       "user_type": "User",
       "followers": 1,
       "public_repos": 4,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "classification": "unknown"
     },
     {
       "login": "trobob",
@@ -1663,7 +1999,8 @@
       "user_type": "User",
       "followers": 0,
       "public_repos": 0,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "classification": "unknown"
     },
     {
       "login": "attila-balint-kul",
@@ -1675,7 +2012,8 @@
       "user_type": "User",
       "followers": 3,
       "public_repos": 7,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "classification": "unknown"
     },
     {
       "login": "datejada",
@@ -1687,7 +2025,11 @@
       "user_type": "User",
       "followers": 50,
       "public_repos": 35,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "normalized_org_name": "tno",
+      "org_match_confidence": 1.0,
+      "classification": "unknown",
+      "dashboard_org_name": "TNO"
     },
     {
       "login": "Sandalots",
@@ -1699,7 +2041,8 @@
       "user_type": "User",
       "followers": 442,
       "public_repos": 15,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "classification": "unknown"
     },
     {
       "login": "JiuBanA1",
@@ -1711,7 +2054,8 @@
       "user_type": "User",
       "followers": 940,
       "public_repos": 16,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "classification": "unknown"
     },
     {
       "login": "rwl",
@@ -1723,7 +2067,8 @@
       "user_type": "User",
       "followers": 179,
       "public_repos": 186,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "classification": "industry"
     },
     {
       "login": "metab0t",
@@ -1735,7 +2080,11 @@
       "user_type": "User",
       "followers": 80,
       "public_repos": 64,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "normalized_org_name": "hefei university of technology",
+      "org_match_confidence": 1.0,
+      "classification": "academic",
+      "dashboard_org_name": "Hefei University of Technology"
     },
     {
       "login": "sanglinwei",
@@ -1747,7 +2096,11 @@
       "user_type": "User",
       "followers": 90,
       "public_repos": 97,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "normalized_org_name": "southeast university",
+      "org_match_confidence": 1.0,
+      "classification": "academic",
+      "dashboard_org_name": "Southeast University"
     },
     {
       "login": "tokorte",
@@ -1759,7 +2112,8 @@
       "user_type": "User",
       "followers": 0,
       "public_repos": 0,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "classification": "unknown"
     },
     {
       "login": "Henryutd2021",
@@ -1771,7 +2125,8 @@
       "user_type": "User",
       "followers": 1,
       "public_repos": 23,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "classification": "unknown"
     },
     {
       "login": "nnhjy",
@@ -1783,7 +2138,11 @@
       "user_type": "User",
       "followers": 3,
       "public_repos": 12,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "normalized_org_name": "eth zurich",
+      "org_match_confidence": 1.0,
+      "classification": "academic",
+      "dashboard_org_name": "Eth Zurich"
     },
     {
       "login": "Yan457",
@@ -1795,7 +2154,8 @@
       "user_type": "User",
       "followers": 0,
       "public_repos": 0,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "classification": "unknown"
     },
     {
       "login": "Petr365",
@@ -1807,7 +2167,8 @@
       "user_type": "User",
       "followers": 0,
       "public_repos": 0,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "classification": "unknown"
     },
     {
       "login": "Omar-Usmani",
@@ -1819,7 +2180,11 @@
       "user_type": "User",
       "followers": 1,
       "public_repos": 1,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "normalized_org_name": "tno",
+      "org_match_confidence": 1.0,
+      "classification": "industry",
+      "dashboard_org_name": "TNO"
     },
     {
       "login": "thomastu",
@@ -1831,7 +2196,8 @@
       "user_type": "User",
       "followers": 23,
       "public_repos": 34,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "classification": "unknown"
     },
     {
       "login": "nicofeuch",
@@ -1843,7 +2209,8 @@
       "user_type": "User",
       "followers": 0,
       "public_repos": 1,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "classification": "unknown"
     },
     {
       "login": "simonzollner",
@@ -1855,7 +2222,8 @@
       "user_type": "User",
       "followers": 3,
       "public_repos": 9,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "classification": "unknown"
     },
     {
       "login": "eliascarv",
@@ -1867,7 +2235,8 @@
       "user_type": "User",
       "followers": 212,
       "public_repos": 28,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "classification": "academic"
     },
     {
       "login": "Mathias157",
@@ -1879,7 +2248,11 @@
       "user_type": "User",
       "followers": 0,
       "public_repos": 16,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "normalized_org_name": "technical university of denmark",
+      "org_match_confidence": 0.0,
+      "classification": "academic",
+      "dashboard_org_name": "Technical University Of Denmark"
     },
     {
       "login": "sarah-sheehy-tnei",
@@ -1891,7 +2264,11 @@
       "user_type": "User",
       "followers": 0,
       "public_repos": 0,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "normalized_org_name": "tnei",
+      "org_match_confidence": 1.0,
+      "classification": "professional",
+      "dashboard_org_name": "TNEI"
     },
     {
       "login": "marto12",
@@ -1903,7 +2280,8 @@
       "user_type": "User",
       "followers": 3,
       "public_repos": 0,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "classification": "unknown"
     },
     {
       "login": "boyuan276",
@@ -1915,7 +2293,11 @@
       "user_type": "User",
       "followers": 27,
       "public_repos": 21,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "normalized_org_name": "cornell university",
+      "org_match_confidence": 1.0,
+      "classification": "academic",
+      "dashboard_org_name": "Cornell University"
     },
     {
       "login": "pywugate",
@@ -1927,7 +2309,8 @@
       "user_type": "User",
       "followers": 10,
       "public_repos": 10,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "classification": "unknown"
     },
     {
       "login": "xhyuuuu",
@@ -1939,7 +2322,8 @@
       "user_type": "User",
       "followers": 1,
       "public_repos": 0,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "classification": "unknown"
     },
     {
       "login": "mzy2240",
@@ -1951,7 +2335,11 @@
       "user_type": "User",
       "followers": 48,
       "public_repos": 222,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "normalized_org_name": "drw",
+      "org_match_confidence": 1.0,
+      "classification": "academic",
+      "dashboard_org_name": "DRW"
     },
     {
       "login": "Prvnkmr130",
@@ -1963,7 +2351,8 @@
       "user_type": "User",
       "followers": 2,
       "public_repos": 0,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "classification": "unknown"
     },
     {
       "login": "alex-robinson",
@@ -1975,7 +2364,11 @@
       "user_type": "User",
       "followers": 28,
       "public_repos": 41,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "normalized_org_name": "alfred wegener",
+      "org_match_confidence": 1.0,
+      "classification": "unknown",
+      "dashboard_org_name": "Alfred Wegener Institute, Helmholtz Centre for Polar and Marine Research"
     },
     {
       "login": "atemmo",
@@ -1987,7 +2380,8 @@
       "user_type": "User",
       "followers": 12,
       "public_repos": 24,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "classification": "unknown"
     },
     {
       "login": "Sunyingyun",
@@ -1999,7 +2393,8 @@
       "user_type": "User",
       "followers": 1,
       "public_repos": 0,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "classification": "unknown"
     },
     {
       "login": "DavidPozo",
@@ -2011,7 +2406,11 @@
       "user_type": "User",
       "followers": 9,
       "public_repos": 4,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "normalized_org_name": "jrc",
+      "org_match_confidence": 1.0,
+      "classification": "academic",
+      "dashboard_org_name": "JRC"
     },
     {
       "login": "xuwkk",
@@ -2023,7 +2422,11 @@
       "user_type": "User",
       "followers": 65,
       "public_repos": 17,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "normalized_org_name": "imperial college london",
+      "org_match_confidence": 1.0,
+      "classification": "academic",
+      "dashboard_org_name": "Imperial College London"
     },
     {
       "login": "AlexanderHoogsteyn",
@@ -2035,7 +2438,11 @@
       "user_type": "User",
       "followers": 4,
       "public_repos": 7,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "normalized_org_name": "ku leuven",
+      "org_match_confidence": 1.0,
+      "classification": "unknown",
+      "dashboard_org_name": "KU Leuven"
     },
     {
       "login": "PavelDergachev",
@@ -2047,7 +2454,8 @@
       "user_type": "User",
       "followers": 4,
       "public_repos": 7,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "classification": "unknown"
     },
     {
       "login": "Sush1090",
@@ -2059,7 +2467,8 @@
       "user_type": "User",
       "followers": 7,
       "public_repos": 7,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "classification": "unknown"
     },
     {
       "login": "ManOntheWindows",
@@ -2071,7 +2480,8 @@
       "user_type": "User",
       "followers": 1,
       "public_repos": 13,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "classification": "unknown"
     },
     {
       "login": "trevorb1",
@@ -2083,7 +2493,11 @@
       "user_type": "User",
       "followers": 49,
       "public_repos": 14,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "normalized_org_name": "simon fraser university",
+      "org_match_confidence": 1.0,
+      "classification": "academic",
+      "dashboard_org_name": "Simon Fraser University"
     },
     {
       "login": "eduardosalaz",
@@ -2095,7 +2509,11 @@
       "user_type": "User",
       "followers": 45,
       "public_repos": 65,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "normalized_org_name": "pepsico/bravos energ\u00eda",
+      "org_match_confidence": 1.0,
+      "classification": "unknown",
+      "dashboard_org_name": "PepsiCo/Bravos Energ\u00eda"
     },
     {
       "login": "Zhouwkk",
@@ -2107,7 +2525,8 @@
       "user_type": "User",
       "followers": 0,
       "public_repos": 2,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "classification": "unknown"
     },
     {
       "login": "Ly0n",
@@ -2119,7 +2538,11 @@
       "user_type": "User",
       "followers": 295,
       "public_repos": 120,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "normalized_org_name": "open energy transition @protontypes",
+      "org_match_confidence": 1.0,
+      "classification": "industry",
+      "dashboard_org_name": "@open-energy-transition @protontypes"
     },
     {
       "login": "alisonk103",
@@ -2131,7 +2554,8 @@
       "user_type": "User",
       "followers": 0,
       "public_repos": 0,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "classification": "unknown"
     },
     {
       "login": "mgrabovsky",
@@ -2143,7 +2567,11 @@
       "user_type": "User",
       "followers": 28,
       "public_repos": 37,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "normalized_org_name": "fakta o klimatu v\u0161e",
+      "org_match_confidence": 1.0,
+      "classification": "unknown",
+      "dashboard_org_name": "Fakta o klimatu, V\u0160E"
     },
     {
       "login": "ktehranchi",
@@ -2155,7 +2583,11 @@
       "user_type": "User",
       "followers": 26,
       "public_repos": 10,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "normalized_org_name": "stanford university",
+      "org_match_confidence": 1.0,
+      "classification": "academic",
+      "dashboard_org_name": "Stanford University"
     },
     {
       "login": "Mailisyorlik",
@@ -2167,7 +2599,11 @@
       "user_type": "User",
       "followers": 2,
       "public_repos": 17,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "normalized_org_name": "carbon direct",
+      "org_match_confidence": 1.0,
+      "classification": "unknown",
+      "dashboard_org_name": "Carbon Direct"
     },
     {
       "login": "slwu89",
@@ -2179,7 +2615,11 @@
       "user_type": "User",
       "followers": 84,
       "public_repos": 110,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "normalized_org_name": "mrc ide @dd harp",
+      "org_match_confidence": 1.0,
+      "classification": "unknown",
+      "dashboard_org_name": "@mrc-ide  @dd-harp"
     },
     {
       "login": "koneill-lboro",
@@ -2191,7 +2631,8 @@
       "user_type": "User",
       "followers": 0,
       "public_repos": 5,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "classification": "academic"
     }
   ]
 }

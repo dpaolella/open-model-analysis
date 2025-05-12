@@ -12,9 +12,11 @@ import pycountry
 from geopy.geocoders import Nominatim
 from geopy.exc import GeocoderTimedOut, GeocoderUnavailable
 from collections import Counter
+from github_user_analyzer import ORG_NAME_VARIATIONS
 
 # Helper function to extract country from location string
 def extract_country(location):
+    """Extract country from a location string using pattern matching and common names"""
     if not location:
         return None
     
@@ -78,6 +80,105 @@ def extract_country(location):
         pass
     
     return None
+
+# Helper function to normalize company/organization names
+def normalize_org_name(org_name):
+    """Normalize organization names for more accurate matching"""
+    if not org_name:
+        return ""
+    
+    # Convert to lowercase and remove common punctuation
+    normalized = org_name.lower().replace(',', ' ').replace('.', ' ').replace('-', ' ')
+    
+    # Replace common abbreviations and prefixes/suffixes
+    replacements = {
+        'univ': 'university',
+        'univ.': 'university',
+        'dept': 'department',
+        'dept.': 'department',
+        'inc': '',
+        'inc.': '',
+        'llc': '',
+        'llc.': '',
+        'ltd': '',
+        'ltd.': '',
+        'co.': 'company',
+        'corp.': 'corporation',
+        'corp': 'corporation',
+        '@': '',
+    }
+    
+    for old, new in replacements.items():
+        normalized = normalized.replace(f" {old} ", f" {new} " if new else " ")
+    
+    # Remove extra whitespace
+    normalized = ' '.join(normalized.split())
+    
+    return normalized
+
+# Import ORG_NAME_VARIATIONS from github_user_analyzer to ensure consistent mappings
+from github_user_analyzer import ORG_NAME_VARIATIONS
+
+# Function to check if org names match using word comparison
+def org_names_match(org1, org2, min_word_length=3):
+    """
+    Check if organization names match by comparing individual words
+    Only considers words of at least min_word_length characters
+    Returns match score (higher = better match)
+    """
+    if not org1 or not org2:
+        return 0
+    
+    # First check if org1 or org2 matches a canonical organization name or its variations
+    org1_lower = org1.lower().strip() if org1 else ""
+    org2_lower = org2.lower().strip() if org2 else ""
+    
+    # Check if either name directly maps to a canonical form
+    for standard_name, variations in ORG_NAME_VARIATIONS.items():
+        # If org1 matches standard name or its variations
+        if (org1_lower == standard_name or org1_lower in variations) and \
+           (org2_lower == standard_name or org2_lower in variations):
+            return 1.0  # Perfect match - both map to same canonical form
+    
+    # Normalize both names
+    norm1 = normalize_org_name(org1)
+    norm2 = normalize_org_name(org2)
+    
+    # Split into words and filter for minimum length
+    words1 = [w for w in norm1.split() if len(w) >= min_word_length]
+    words2 = [w for w in norm2.split() if len(w) >= min_word_length]
+    
+    # If either has no qualifying words, no match
+    if not words1 or not words2:
+        return 0
+    
+    # Count matching words
+    common_words = set(words1).intersection(set(words2))
+    
+    # Calculate matching score - percentage of words that match
+    match_score1 = len(common_words) / len(words1)
+    match_score2 = len(common_words) / len(words2)
+    
+    # Return the higher of the two scores - if either one has most of its words match
+    return max(match_score1, match_score2)
+
+# Function to get canonical organization name from any variation
+def get_canonical_org_name(org_name):
+    """
+    Return the canonical (standard) form of an organization name
+    """
+    if not org_name:
+        return ""
+    
+    org_lower = org_name.lower().strip()
+    
+    # Check direct matches to standards or variations
+    for standard_name, variations in ORG_NAME_VARIATIONS.items():
+        if org_lower == standard_name or org_lower in variations:
+            return standard_name.title()
+    
+    # Return original if no match
+    return org_name.strip()
 
 # Page configuration
 st.set_page_config(
@@ -348,7 +449,7 @@ def main():
             color_continuous_scale='Viridis',
         )
         fig.update_layout(xaxis_tickangle=-45)
-        st.plotly_chart(fig)
+        st.plotly_chart(fig, key="top_models_chart")
         
         # Radar chart for top 5 models
         st.subheader("Multi-Dimensional Comparison")
@@ -382,7 +483,7 @@ def main():
             ),
             title="Model Comparison Across Different Dimensions"
         )
-        st.plotly_chart(fig)
+        st.plotly_chart(fig, key="radar_chart_top5")
         
         # Detailed metrics table
         st.subheader("Detailed Metrics")
@@ -477,7 +578,7 @@ def main():
                 ),
                 title="Model Comparison Across Different Dimensions"
             )
-            st.plotly_chart(radar_fig)
+            st.plotly_chart(radar_fig, key="model_comparison_radar")
             
             # Bar chart comparison for core metrics
             core_metrics = ['stars', 'forks', 'contributors_count', 'releases_count']
@@ -502,7 +603,7 @@ def main():
                 barmode='group',
                 title="Comparison of Key Metrics"
             )
-            st.plotly_chart(bar_fig)
+            st.plotly_chart(bar_fig, key="model_comparison_bar")
             
             # Growth Analysis section (time series data)
             st.subheader("Growth Analysis")
@@ -563,7 +664,7 @@ def main():
                             legend_title="Models",
                             hovermode="x unified"
                         )
-                        st.plotly_chart(stars_fig)
+                        st.plotly_chart(stars_fig, key="stars_growth_chart")
                     else:
                         st.info("No star growth data available for selected models.")
                     
@@ -646,7 +747,7 @@ def main():
                             legend_title="Models",
                             hovermode="x unified"
                         )
-                        st.plotly_chart(commit_fig)
+                        st.plotly_chart(commit_fig, key="commits_time_chart")
                     else:
                         st.info("No commit activity data available for selected models.")
                     
@@ -725,7 +826,7 @@ def main():
                             legend_title="Models",
                             hovermode="x unified"
                         )
-                        st.plotly_chart(code_fig)
+                        st.plotly_chart(code_fig, key="code_changes_chart")
                     else:
                         st.info("No code changes data available for selected models.")
                     
@@ -773,9 +874,7 @@ def main():
                             legend_title="Models",
                             hovermode="x unified"
                         )
-                        st.plotly_chart(issue_fig)
-                    else:
-                        st.info("No issue activity data available for selected models.")
+                        st.plotly_chart(issue_fig, key="issue_activity_chart")
                     
                     # Issue response metrics
                     st.write("### Issue Response Metrics")
@@ -887,6 +986,10 @@ def main():
                     options=["All Repositories"] + available_repos
                 )
                 
+                # Initialize locations and loc_counts before the if/else branches
+                locations = []
+                loc_counts = []
+                
                 if selected_repo == "All Repositories":
                     # Combine data from all repos
                     total_users = sum(analysis["total_users"] for analysis in user_analysis)
@@ -911,7 +1014,7 @@ def main():
                         title=f"Distribution of {total_users} Users by Type",
                         color_discrete_sequence=px.colors.qualitative.Plotly
                     )
-                    st.plotly_chart(fig)
+                    st.plotly_chart(fig, key="all_repos_user_types_pie")
                     
                     # Combine organizations
                     combined_orgs = {}
@@ -938,7 +1041,7 @@ def main():
                         color_continuous_scale=px.colors.sequential.Viridis
                     )
                     fig.update_layout(xaxis_tickangle=-45)
-                    st.plotly_chart(fig)
+                    st.plotly_chart(fig, key="all_repos_top_orgs_bar")
                     
                     # Breakdown of contributors
                     st.subheader("Contributors by Type")
@@ -959,142 +1062,169 @@ def main():
                         title="Distribution of Contributors by Type",
                         color_discrete_sequence=px.colors.qualitative.Plotly
                     )
-                    st.plotly_chart(fig)
+                    st.plotly_chart(fig, key="all_repos_contributor_pie")
                     
-                    # Combine organizations by type
-                    st.subheader("Top Organizations by Type")
-                    combined_orgs_by_type = {}
-                    for analysis in user_analysis:
-                        if "organizations_by_type" in analysis:
-                            for org_type, orgs in analysis["organizations_by_type"].items():
-                                if org_type not in combined_orgs_by_type:
-                                    combined_orgs_by_type[org_type] = Counter()
-                                combined_orgs_by_type[org_type].update(orgs)
+                    # Top Organizations by Type
+                    st.header("Top Organizations by Type")
+                    
+                    academic_tab, professional_tab, industry_tab, financial_tab, utility_tab, government_tab = st.tabs([
+                        "Academic", "Professional", "Industry", "Financial", "Utility", "Government"
+                    ])
+                    
+                    # Get combined organizations by type
+                    combined_orgs_by_type = get_all_organizations_by_type(user_analysis)
                     
                     if combined_orgs_by_type:
                         # Create tabs for each organization type
-                        org_types = list(combined_orgs_by_type.keys())
+                        org_types = ['academic', 'professional', 'industry', 'financial', 'utility', 'government']
+                        tabs = [academic_tab, professional_tab, industry_tab, financial_tab, utility_tab, government_tab]
                         
-                        if org_types:
-                            tabs = st.tabs([t.capitalize() for t in org_types])
-                            
-                            for i, org_type in enumerate(org_types):
-                                orgs_data = combined_orgs_by_type[org_type]
+                        for i, org_type in enumerate(org_types):
+                            tab = tabs[i]
+                            orgs_data = combined_orgs_by_type.get(org_type, {})
+                            with tab:
                                 if orgs_data:
-                                    with tabs[i]:
-                                        # Create a DataFrame for the organizations
-                                        orgs_df = pd.DataFrame({
-                                            'Organization': list(orgs_data.keys()),
-                                            'Users': list(orgs_data.values())
-                                        }).sort_values('Users', ascending=False)
-                                        
-                                        # Display as a bar chart
-                                        fig = px.bar(
-                                            orgs_df,
-                                            x='Organization',
-                                            y='Users',
-                                            title=f"Top {org_type.capitalize()} Organizations Across All Repositories",
-                                            color='Users',
-                                            color_continuous_scale=px.colors.sequential.Viridis
-                                        )
-                                        fig.update_layout(xaxis_tickangle=-45)
-                                        st.plotly_chart(fig)
-                                        
-                                        # Also display as a table
-                                        st.dataframe(orgs_df.head(10))
+                                    # Create a DataFrame for the organizations
+                                    orgs_df = pd.DataFrame({
+                                        'Organization': list(orgs_data.keys()),
+                                        'Users': list(orgs_data.values())
+                                    }).sort_values('Users', ascending=False)
+                                    
+                                    # Display as a bar chart
+                                    fig = px.bar(
+                                        orgs_df,
+                                        x='Organization',
+                                        y='Users',
+                                        title=f"Top {org_type.capitalize()} Organizations Across All Repositories",
+                                        color='Users',
+                                        color_continuous_scale=px.colors.sequential.Viridis
+                                    )
+                                    fig.update_layout(xaxis_tickangle=-45)
+                                    st.plotly_chart(fig, key=f"org_type_bar_{org_type}")
+                                    
+                                    # Also display as a table
+                                    st.dataframe(orgs_df.head(10))
                                 else:
-                                    with tabs[i]:
-                                        st.info(f"No {org_type} organizations found.")
-                        else:
-                            st.info("No organization type data available.")
+                                    st.info(f"No {org_type} organizations found in the dataset.")
                     else:
                         st.info("No organization by type data available.")
                     
                     # Locations
                     st.subheader("Geographic Distribution")
-                    if repo_analysis["top_locations"]:
-                        locations = list(repo_analysis["top_locations"].keys())
-                        loc_counts = list(repo_analysis["top_locations"].values())
-                        
-                        # Bar chart of top locations
-                        fig = px.bar(
-                            x=locations,
-                            y=loc_counts,
-                            labels={'x': 'Location', 'y': 'Number of Users'},
-                            title="Top Locations",
-                            color=loc_counts,
-                            color_continuous_scale=px.colors.sequential.Viridis
-                        )
-                        fig.update_layout(xaxis_tickangle=-45)
-                        st.plotly_chart(fig)
-                        
-                        # Add a world map visualization
-                        st.subheader("Geographic Map")
-                        try:
-                            # Try to geocode locations
-                            geolocator = Nominatim(user_agent="energy-models-dashboard")
-                            
-                            # Process locations data
-                            country_counts = {}
-                            with st.spinner("Geocoding locations to create map visualization..."):
-                                for location, count in repo_analysis["top_locations"].items():
-                                    country = extract_country(location)
-                                    
-                                    if not country and len(location) > 3:
-                                        try:
-                                            # Try geocoding with a timeout
-                                            geo = geolocator.geocode(location, timeout=5)
-                                            if geo and geo.raw.get('display_name'):
-                                                # Extract country from geocoded result
-                                                addr_parts = geo.raw.get('display_name', '').split(',')
-                                                if addr_parts:
-                                                    country = addr_parts[-1].strip()
-                                        except (GeocoderTimedOut, GeocoderUnavailable):
-                                            # Skip if geocoding fails
-                                            pass
-                                    
-                                    if country:
-                                        if country in country_counts:
-                                            country_counts[country] += count
-                                        else:
-                                            country_counts[country] = count
-                            
-                            if country_counts:
-                                # Create dataframe for choropleth map
-                                country_df = pd.DataFrame({
-                                    'country': list(country_counts.keys()),
-                                    'users': list(country_counts.values())
-                                })
-                                
-                                # Create choropleth map
-                                fig = px.choropleth(
-                                    country_df,
-                                    locations='country',
-                                    locationmode='country names',
-                                    color='users',
-                                    hover_name='country',
-                                    color_continuous_scale=px.colors.sequential.Viridis,
-                                    title=f"User Distribution by Country ({repo_analysis['repo_name']})"
-                                )
-                                fig.update_layout(
-                                    geo=dict(
-                                        showframe=False,
-                                        showcoastlines=True,
-                                        projection_type='equirectangular'
-                                    )
-                                )
-                                st.plotly_chart(fig)
+                    # Combine locations from all repositories when All Repositories is selected
+                    combined_locations = {}
+                    for analysis in user_analysis:
+                        for location, count in analysis["top_locations"].items():
+                            if location in combined_locations:
+                                combined_locations[location] += count
                             else:
-                                st.info("Couldn't geocode locations for map visualization.")
-                        except Exception as e:
-                            st.error(f"Error creating map visualization: {str(e)}")
-                            st.info("Try installing additional packages with: pip install pycountry geopy")
+                                combined_locations[location] = count
+                    
+                    # Sort locations by count and take top 20
+                    sorted_locations = sorted(combined_locations.items(), key=lambda x: x[1], reverse=True)
+                    top_locations = dict(sorted_locations[:20])
+                    
+                    locations = list(top_locations.keys())
+                    loc_counts = list(top_locations.values())
+                else:
+                    # Find the analysis for the selected repository
+                    repo_analysis = next((analysis for analysis in user_analysis if analysis["repo_name"] == selected_repo), None)
+                    
+                    if not repo_analysis:
+                        st.error(f"No analysis data found for {selected_repo}")
                     else:
-                        st.info("No location data available.")
+                        # Show basic statistics
+                        st.subheader(f"Analysis for {selected_repo}")
+                        st.write(f"Total users: {repo_analysis.get('total_users', 0)}")
+                        
+                        # Locations
+                        st.subheader("Geographic Distribution")
+                        if "top_locations" in repo_analysis and repo_analysis["top_locations"]:
+                            locations = list(repo_analysis["top_locations"].keys())
+                            loc_counts = list(repo_analysis["top_locations"].values())
+                
+                # Now locations and loc_counts are always defined
+                if locations:
+                    # Bar chart of top locations
+                    fig = px.bar(
+                        x=locations,
+                        y=loc_counts,
+                        labels={'x': 'Location', 'y': 'Number of Users'},
+                        title="Top Locations",
+                        color=loc_counts,
+                        color_continuous_scale=px.colors.sequential.Viridis
+                    )
+                    fig.update_layout(xaxis_tickangle=-45)
+                    st.plotly_chart(fig, key=f"top_locations_bar_{selected_repo}")
+                    
+                    # Add a world map visualization
+                    st.subheader("Geographic Map")
+                    try:
+                        # Use the pre-processed country data
+                        if selected_repo == "All Repositories":
+                            # Combine country counts from all repositories
+                            combined_country_counts = {}
+                            for analysis in user_analysis:
+                                if "country_counts" in analysis:
+                                    for country, count in analysis["country_counts"].items():
+                                        if country in combined_country_counts:
+                                            combined_country_counts[country] += count
+                                        else:
+                                            combined_country_counts[country] = count
+                            country_counts = combined_country_counts
+                        else:
+                            # Use the country data from the selected repository
+                            country_counts = repo_analysis.get("country_counts", {})
+                        
+                        if country_counts:
+                            # Create dataframe for choropleth map
+                            country_df = pd.DataFrame({
+                                'country': list(country_counts.keys()),
+                                'users': list(country_counts.values())
+                            })
+                            
+                            # Create choropleth map
+                            map_title = f"User Distribution by Country ({selected_repo})" if selected_repo != "All Repositories" else "User Distribution by Country (All Repositories)"
+                            fig = px.choropleth(
+                                country_df,
+                                locations='country',
+                                locationmode='country names',
+                                color='users',
+                                hover_name='country',
+                                color_continuous_scale=px.colors.sequential.Viridis,
+                                title=map_title
+                            )
+                            fig.update_layout(
+                                geo=dict(
+                                    showframe=True,
+                                    showcoastlines=True,
+                                    projection_type='equirectangular',
+                                    landcolor='rgb(243, 243, 243)',  # Light gray land
+                                    oceancolor='rgb(220, 240, 255)',  # Light blue ocean
+                                    coastlinecolor='rgb(80, 80, 80)',  # Darker coast lines
+                                    countrycolor='rgb(150, 150, 150)'  # Gray country borders
+                                ),
+                                margin=dict(l=0, r=0, t=50, b=0),  # Tight margins
+                                paper_bgcolor='rgba(0,0,0,0)',  # Transparent background
+                                plot_bgcolor='rgba(0,0,0,0)'    # Transparent plot area
+                            )
+                            st.plotly_chart(fig, key=f"country_map_{selected_repo}")
+                        else:
+                            st.info("No country data available. Run the GitHub user analysis script to collect this data.")
+                    except Exception as e:
+                        st.error(f"Error creating map visualization: {str(e)}")
+                        st.info("Try running the GitHub user analysis script with the latest version.")
+                else:
+                    st.info("No location data available.")
 
-                    # Classification by organization type
+                # User Types - show for both All Repositories and individual repos but with different layouts
+                if selected_repo == "All Repositories":
+                    # Already handled in the All Repositories section
+                    pass
+                else:
+                    # Classification by organization type for individual repositories
                     st.subheader("User Types")
-                    if "classification_counts" in repo_analysis:
+                    if repo_analysis and "classification_counts" in repo_analysis and repo_analysis["classification_counts"]:
                         # Define custom colors for the classifications
                         color_map = {
                             'academic': '#4285F4',  # blue
@@ -1126,218 +1256,131 @@ def main():
                             x='Type',
                             y='Users',
                             color='Type',
-                            title="User Types",
+                            title="User Types by Count",
                             color_discrete_sequence=colors,
                             labels={'Type': 'User Type', 'Users': 'Number of Users'}
                         )
-                        st.plotly_chart(fig)
+                        st.plotly_chart(fig, key=f"user_types_bar_{selected_repo}")
                     else:
-                        st.info("No classification data available.")
-                else:
-                    # Show data for selected repo
-                    repo_analysis = next((a for a in user_analysis if a["repo_name"] == selected_repo), None)
-                    
-                    if repo_analysis:
-                        st.write(f"Total users interacting with {selected_repo}: **{repo_analysis['total_users']}**")
-                        
-                        # Classification breakdown
-                        st.subheader("User Types")
-                        classes = list(repo_analysis["classification_counts"].keys())
-                        counts = list(repo_analysis["classification_counts"].values())
-                        
-                        fig = px.pie(
-                            values=counts,
-                            names=classes,
-                            title=f"Distribution of Users by Type",
-                            color_discrete_sequence=px.colors.qualitative.Plotly
-                        )
-                        st.plotly_chart(fig)
-                        
-                        # Organizations
-                        st.subheader("Top Organizations")
-                        if repo_analysis["top_organizations"]:
-                            orgs = list(repo_analysis["top_organizations"].keys())
-                            org_counts = list(repo_analysis["top_organizations"].values())
-                            
-                            fig = px.bar(
-                                x=orgs,
-                                y=org_counts,
-                                labels={'x': 'Organization', 'y': 'Number of Users'},
-                                title="Top Organizations",
-                                color=org_counts,
-                                color_continuous_scale=px.colors.sequential.Viridis
-                            )
-                            fig.update_layout(xaxis_tickangle=-45)
-                            st.plotly_chart(fig)
-                        else:
-                            st.info("No organization data available.")
-                        
-                        # Organizations by type
-                        st.subheader("Top Organizations by Type")
-                        if "organizations_by_type" in repo_analysis and repo_analysis["organizations_by_type"]:
-                            # Create tabs for each organization type
-                            org_types = list(repo_analysis["organizations_by_type"].keys())
-                            
-                            if org_types:
-                                tabs = st.tabs([t.capitalize() for t in org_types])
-                                
-                                for i, org_type in enumerate(org_types):
-                                    orgs_data = repo_analysis["organizations_by_type"][org_type]
-                                    if orgs_data:
-                                        with tabs[i]:
-                                            # Create a DataFrame for the organizations
-                                            orgs_df = pd.DataFrame({
-                                                'Organization': list(orgs_data.keys()),
-                                                'Users': list(orgs_data.values())
-                                            }).sort_values('Users', ascending=False)
-                                            
-                                            # Display as a bar chart
-                                            fig = px.bar(
-                                                orgs_df,
-                                                x='Organization',
-                                                y='Users',
-                                                title=f"Top {org_type.capitalize()} Organizations",
-                                                color='Users',
-                                                color_continuous_scale=px.colors.sequential.Viridis
-                                            )
-                                            fig.update_layout(xaxis_tickangle=-45)
-                                            st.plotly_chart(fig)
-                                            
-                                            # Also display as a table
-                                            st.dataframe(orgs_df)
-                                    else:
-                                        with tabs[i]:
-                                            st.info(f"No {org_type} organizations found.")
-                            else:
-                                st.info("No organization type data available.")
-                        else:
-                            st.info("No organization by type data available.")
-                        
-                        # Locations
-                        st.subheader("Geographic Distribution")
-                        if repo_analysis["top_locations"]:
-                            locations = list(repo_analysis["top_locations"].keys())
-                            loc_counts = list(repo_analysis["top_locations"].values())
-                            
-                            # Bar chart of top locations
-                            fig = px.bar(
-                                x=locations,
-                                y=loc_counts,
-                                labels={'x': 'Location', 'y': 'Number of Users'},
-                                title="Top Locations",
-                                color=loc_counts,
-                                color_continuous_scale=px.colors.sequential.Viridis
-                            )
-                            fig.update_layout(xaxis_tickangle=-45)
-                            st.plotly_chart(fig)
-                            
-                            # Add a world map visualization
-                            st.subheader("Geographic Map")
-                            try:
-                                # Try to geocode locations
-                                geolocator = Nominatim(user_agent="energy-models-dashboard")
-                                
-                                # Process locations data
-                                country_counts = {}
-                                with st.spinner("Geocoding locations to create map visualization..."):
-                                    for location, count in repo_analysis["top_locations"].items():
-                                        country = extract_country(location)
-                                        
-                                        if not country and len(location) > 3:
-                                            try:
-                                                # Try geocoding with a timeout
-                                                geo = geolocator.geocode(location, timeout=5)
-                                                if geo and geo.raw.get('display_name'):
-                                                    # Extract country from geocoded result
-                                                    addr_parts = geo.raw.get('display_name', '').split(',')
-                                                    if addr_parts:
-                                                        country = addr_parts[-1].strip()
-                                            except (GeocoderTimedOut, GeocoderUnavailable):
-                                                # Skip if geocoding fails
-                                                pass
-                                        
-                                        if country:
-                                            if country in country_counts:
-                                                country_counts[country] += count
-                                            else:
-                                                country_counts[country] = count
-                                
-                                if country_counts:
-                                    # Create dataframe for choropleth map
-                                    country_df = pd.DataFrame({
-                                        'country': list(country_counts.keys()),
-                                        'users': list(country_counts.values())
-                                    })
-                                    
-                                    # Create choropleth map
-                                    fig = px.choropleth(
-                                        country_df,
-                                        locations='country',
-                                        locationmode='country names',
-                                        color='users',
-                                        hover_name='country',
-                                        color_continuous_scale=px.colors.sequential.Viridis,
-                                        title=f"User Distribution by Country ({repo_analysis['repo_name']})"
-                                    )
-                                    fig.update_layout(
-                                        geo=dict(
-                                            showframe=False,
-                                            showcoastlines=True,
-                                            projection_type='equirectangular'
-                                        )
-                                    )
-                                    st.plotly_chart(fig)
-                                else:
-                                    st.info("Couldn't geocode locations for map visualization.")
-                            except Exception as e:
-                                st.error(f"Error creating map visualization: {str(e)}")
-                                st.info("Try installing additional packages with: pip install pycountry geopy")
-                        else:
-                            st.info("No location data available.")
+                        st.info("No classification data available for this repository.")
 
-                        # Classification by organization type
-                        st.subheader("User Types")
-                        if "classification_counts" in repo_analysis:
-                            # Define custom colors for the classifications
-                            color_map = {
-                                'academic': '#4285F4',  # blue
-                                'industry': '#34A853',  # green
-                                'utility': '#FBBC05',   # yellow
-                                'government': '#EA4335',  # red
-                                'financial': '#8205B4',  # purple
-                                'ngo': '#00BCD4',       # cyan
-                                'professional': '#FF9800',  # orange
-                                'research_organization': '#4DB6AC',  # teal
-                                'rto': '#FF5722',       # deep orange
-                                'unknown': '#9E9E9E'    # grey
-                            }
+                # Organization Search Section - Always show regardless of repository selection
+                st.header("Organization Search")
+                st.write("Search for organizations and see associated users and their model interactions")
+                
+                # Organization search
+                st.subheader("Search for an organization:")
+                search_term = st.text_input("Search for an organization:", "")
+                
+                if search_term:
+                    # Find matching organizations
+                    matching_orgs = search_organizations(search_term, user_analysis)
+                    
+                    if matching_orgs:
+                        # Allow user to select from matching organizations
+                        st.subheader("Select an organization:")
+                        org_options = [org['name'] for org in matching_orgs]
+                        selected_org = st.selectbox("", org_options)
+                        
+                        if selected_org:
+                            # Display users from this organization across all repositories
+                            users = []
                             
-                            # Create a dataframe for better visualization
-                            class_df = pd.DataFrame({
-                                'Type': list(repo_analysis["classification_counts"].keys()),
-                                'Users': list(repo_analysis["classification_counts"].values())
-                            })
+                            # Find all variations that map to the selected canonical name
+                            selected_canonical = get_canonical_org_name(selected_org)
+                            matching_variations = [selected_canonical.lower()]
                             
-                            # Sort by number of users
-                            class_df = class_df.sort_values('Users', ascending=False)
+                            # Add all variations of this canonical name
+                            for std_name, variations in ORG_NAME_VARIATIONS.items():
+                                if std_name.title() == selected_canonical:
+                                    matching_variations.extend(variations)
+                                    break
                             
-                            # Create a nicer bar chart with custom colors
-                            colors = [color_map.get(cls, '#9E9E9E') for cls in class_df['Type']]
+                            for repo_analysis in user_analysis:
+                                # Handle both new and old data formats
+                                if 'users_data' in repo_analysis:
+                                    users_data = repo_analysis['users_data']
+                                    for interaction_type in ['stargazers', 'forkers', 'contributors', 'watchers']:
+                                        if interaction_type in users_data:
+                                            for user in users_data[interaction_type]:
+                                                # Check if user's company matches any variation of the selected org
+                                                if user.get('company'):
+                                                    user_company = user['company'].lower().strip()
+                                                    
+                                                    # Check against variations or direct match to canonical
+                                                    if (user.get('dashboard_org_name') and user['dashboard_org_name'].lower() == selected_canonical.lower()) or \
+                                                       any(var in user_company for var in matching_variations):
+                                                        # Avoid duplicates
+                                                        if not any(u['login'] == user['login'] for u in users):
+                                                            users.append({
+                                                                'login': user['login'],
+                                                                'name': user.get('name', ''),
+                                                                'company': user.get('company', ''),
+                                                                'match_quality': user.get('org_match_confidence', 1.0) if 'org_match_confidence' in user else 1.0,
+                                                                'models': set()
+                                                            })
+                                # Older data format
+                                elif 'data' in repo_analysis:
+                                    for interaction_type in ['stargazers', 'forkers', 'contributors', 'watchers']:
+                                        if interaction_type in repo_analysis['data']:
+                                            for user in repo_analysis['data'][interaction_type]:
+                                                # Check if user's company matches any variation of the selected org
+                                                if user.get('company'):
+                                                    user_company = user['company'].lower().strip()
+                                                    
+                                                    # Check against variations or direct match to canonical
+                                                    if (user.get('dashboard_org_name') and user['dashboard_org_name'].lower() == selected_canonical.lower()) or \
+                                                       any(var in user_company for var in matching_variations):
+                                                        # Avoid duplicates
+                                                        if not any(u['login'] == user['login'] for u in users):
+                                                            users.append({
+                                                                'login': user['login'],
+                                                                'name': user.get('name', ''),
+                                                                'company': user.get('company', ''),
+                                                                'match_quality': user.get('org_match_confidence', 1.0) if 'org_match_confidence' in user else 1.0,
+                                                                'models': set()
+                                                            })
                             
-                            fig = px.bar(
-                                class_df,
-                                x='Type',
-                                y='Users',
-                                color='Type',
-                                title="User Types",
-                                color_discrete_sequence=colors,
-                                labels={'Type': 'User Type', 'Users': 'Number of Users'}
-                            )
-                            st.plotly_chart(fig)
-                        else:
-                            st.info("No classification data available.")
+                            # Get models for each user
+                            for repo_analysis in user_analysis:
+                                repo_name = repo_analysis['repo_name']
+                                # Handle both data formats
+                                if 'users_data' in repo_analysis:
+                                    users_data = repo_analysis['users_data']
+                                    for interaction_type in ['stargazers', 'forkers', 'contributors', 'watchers']:
+                                        if interaction_type in users_data:
+                                            for user in users_data[interaction_type]:
+                                                # Find matching user in our list
+                                                for u in users:
+                                                    if u['login'] == user['login']:
+                                                        u['models'].add(repo_name)
+                                elif 'data' in repo_analysis:
+                                    for interaction_type in ['stargazers', 'forkers', 'contributors', 'watchers']:
+                                        if interaction_type in repo_analysis['data']:
+                                            for user in repo_analysis['data'][interaction_type]:
+                                                # Find matching user in our list
+                                                for u in users:
+                                                    if u['login'] == user['login']:
+                                                        u['models'].add(repo_name)
+                            
+                            # Convert sets to lists for display
+                            for u in users:
+                                u['models'] = ', '.join(sorted(u['models']))
+                            
+                            # Display as table
+                            if users:
+                                st.subheader(f"Users from {selected_org}")
+                                st.write(f"Found {len(users)} users from this organization")
+                                
+                                # Create DataFrame for display
+                                users_df = pd.DataFrame(users)
+                                st.dataframe(users_df)
+                            else:
+                                st.info("No users found for this organization")
                     else:
-                        st.info("No user analysis data available for the selected repository.")
+                        st.info("No matching organizations found")
+                else:
+                    st.info("Enter an organization name to search")
             else:
                 st.info("No user analysis data available.")
         else:
@@ -1354,6 +1397,130 @@ def main():
     st.sidebar.code("python github_data_fetcher.py")
     st.sidebar.write("To analyze GitHub users, run the user analysis script:")
     st.sidebar.code("python github_user_analysis.py")
+
+def search_organizations(search_term, user_analysis, threshold=0.6):
+    """Search for organizations across all repositories"""
+    matching_orgs = []
+    
+    for repo_analysis in user_analysis:
+        # Process organizations from organization_name_mapping
+        if 'organization_name_mapping' in repo_analysis:
+            org_map = repo_analysis['organization_name_mapping']
+            for org_name in org_map.values():
+                # Get canonical name for consistency
+                canonical_name = get_canonical_org_name(org_name)
+                
+                # Match against canonical name or original
+                match_score = max(
+                    org_names_match(search_term, canonical_name),
+                    org_names_match(search_term, org_name)
+                )
+                
+                if match_score >= threshold and canonical_name not in [o['name'] for o in matching_orgs]:
+                    matching_orgs.append({
+                        'name': canonical_name,
+                        'score': match_score
+                    })
+        
+        # Also search through all users - newer format
+        if 'users_data' in repo_analysis:
+            for interaction_type in ['stargazers', 'forkers', 'contributors', 'watchers']:
+                if interaction_type in repo_analysis['users_data']:
+                    for user in repo_analysis['users_data'][interaction_type]:
+                        if user.get('company'):
+                            org_name = user['company']
+                            canonical_name = get_canonical_org_name(org_name)
+                            
+                            match_score = max(
+                                org_names_match(search_term, canonical_name),
+                                org_names_match(search_term, org_name)
+                            )
+                            
+                            if match_score >= threshold and canonical_name not in [o['name'] for o in matching_orgs]:
+                                matching_orgs.append({
+                                    'name': canonical_name,
+                                    'score': match_score
+                                })
+        # Older format
+        elif 'data' in repo_analysis:
+            for interaction_type in ['stargazers', 'forkers', 'contributors', 'watchers']:
+                if interaction_type in repo_analysis['data']:
+                    for user in repo_analysis['data'][interaction_type]:
+                        if user.get('company'):
+                            org_name = user['company']
+                            canonical_name = get_canonical_org_name(org_name)
+                            
+                            match_score = max(
+                                org_names_match(search_term, canonical_name),
+                                org_names_match(search_term, org_name)
+                            )
+                            
+                            if match_score >= threshold and canonical_name not in [o['name'] for o in matching_orgs]:
+                                matching_orgs.append({
+                                    'name': canonical_name,
+                                    'score': match_score
+                                })
+    
+    # Sort by match score
+    matching_orgs.sort(key=lambda x: x['score'], reverse=True)
+    return matching_orgs
+
+def get_all_organizations_by_type(user_analysis):
+    """Gather organizations by type across all repositories"""
+    combined_orgs_by_type = {}
+    
+    for analysis in user_analysis:
+        if "organizations_by_type" in analysis:
+            for org_type, orgs in analysis["organizations_by_type"].items():
+                if org_type not in combined_orgs_by_type:
+                    combined_orgs_by_type[org_type] = Counter()
+                combined_orgs_by_type[org_type].update(orgs)
+        
+        # If we don't have pre-calculated organizations_by_type, process from raw data
+        # This is a fallback for older data formats
+        elif 'users_data' in analysis or 'data' in analysis:
+            # First gather all users
+            all_users = []
+            if 'users_data' in analysis:
+                for interaction_type in ['stargazers', 'forkers', 'contributors', 'watchers']:
+                    if interaction_type in analysis['users_data']:
+                        for user in analysis['users_data'][interaction_type]:
+                            if user.get('login') and user.get('classification') and user.get('classification') != 'unknown':
+                                all_users.append(user)
+            elif 'data' in analysis:
+                for interaction_type in ['stargazers', 'forkers', 'contributors', 'watchers']:
+                    if interaction_type in analysis['data']:
+                        for user in analysis['data'][interaction_type]:
+                            if user.get('login') and user.get('classification') and user.get('classification') != 'unknown':
+                                all_users.append(user)
+            
+            # Process users to get organizations by type
+            orgs_by_type = {}
+            for user in all_users:
+                org_name = None
+                # Use high-confidence dashboard org name when available
+                if user.get('dashboard_org_name') and user.get('org_match_confidence', 0) >= 0.8:
+                    org_name = user.get('dashboard_org_name')
+                # Otherwise use company name directly, but only if no dashboard name was assigned
+                elif user.get('company') and not user.get('dashboard_org_name'):
+                    org_name = user.get('company', '').strip()
+                    
+                # Only proceed if we have both an org name and a classification
+                if org_name and user['classification'] != 'unknown':
+                    cls = user['classification']
+                    
+                    if cls not in orgs_by_type:
+                        orgs_by_type[cls] = Counter()
+                    
+                    orgs_by_type[cls][org_name] += 1
+            
+            # Add to combined organizations
+            for org_type, orgs in orgs_by_type.items():
+                if org_type not in combined_orgs_by_type:
+                    combined_orgs_by_type[org_type] = Counter()
+                combined_orgs_by_type[org_type].update(orgs)
+    
+    return combined_orgs_by_type
 
 if __name__ == "__main__":
     main() 

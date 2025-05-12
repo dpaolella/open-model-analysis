@@ -39,3 +39,4 @@ OSeMOSYS,"OSeMOSYS is an open source modelling system for long-run integrated as
 Temoa,"Tools for Energy Model Optimization and Analysis (Temoa) is an open source modeling framework for conducting energy system analysis.",,Capacity Expansion Modeling,,,Python,,,https://github.com/TemoaProject/temoa
 TIMES,"The Integrated MARKAL-EFOM System (TIMES) - a bottom-up optimization model for energy-environment systems",,Capacity Expansion Modeling; Production Cost Modeling,,,,,,https://github.com/etsap-TIMES/TIMES_model
 RESOLVE,"Resolve is a least-cost capacity expansion model that identifies optimal electricity supply portfolios through capacity expansion and production simulation modeling.",,Capacity Expansion Modeling,E3,,,,,https://github.com/e3-/resolve
+GridDyn,"GridDyn is an open-source power transmission simulation software package",,Power Flow; Dynamics Simulation,LLNL,,,,,https://github.com/LLNL/GridDyn

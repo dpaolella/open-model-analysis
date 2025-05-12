@@ -8,8 +8,8 @@ A Streamlit dashboard for analyzing energy modeling tools from the G-PST Open To
 - Calculates scores for:
   - Popularity (stars, forks)
   - Maturity (age, maintenance, releases)
-  - Activity (commit frequency)
-  - Community engagement (contributors)
+  - Developer Activity (commit frequency)
+  - Developer Community (contributors)
   - User-friendliness (documentation, issues)
 - Creates visualizations for comparing models
 - Filters analysis by model category
@@ -19,6 +19,10 @@ A Streamlit dashboard for analyzing energy modeling tools from the G-PST Open To
   - Commit activity patterns
   - Code changes (additions/deletions)
   - Issue activity and resolution metrics
+- Provides user analysis by:
+  - Organization type (academic, industry, utility, etc.)
+  - Geographic distribution
+  - Engagement patterns across repositories
 
 ## Requirements
 
@@ -37,88 +41,177 @@ A Streamlit dashboard for analyzing energy modeling tools from the G-PST Open To
    - On Windows: `venv\Scripts\activate`
 4. Install dependencies:
    ```
-   pip install streamlit pandas numpy matplotlib seaborn plotly PyGithub python-dotenv requests
-   ```
-   or create a requirements.txt file with these packages and run:
-   ```
    pip install -r requirements.txt
    ```
 
-## Architecture
+## Data Pipeline Architecture
 
-The application is split into two separate scripts:
+The application is organized into a modular data pipeline with multiple scripts that each handle a specific part of the data collection, processing, and visualization:
 
-1. **github_data_fetcher.py** - Fetches GitHub metrics and calculates scores, saving the data to a JSON file
-2. **model_dashboard.py** - Streamlit dashboard that reads the pre-fetched data and creates visualizations
+```
+Data Sources → Collection → Processing → Analysis → Visualization
+ (GitHub API)     ↓            ↓           ↓          ↓
+                Fetchers → Processors → Analyzers → Dashboard
+```
 
-This separation allows you to:
-- Run the data fetching once and reuse the data in multiple dashboard sessions
-- Reduce API calls to GitHub (avoiding rate limits)
-- Update the data on your own schedule
+### Scripts Overview
 
-## Usage
+1. **github_data_fetcher.py** - Collects repository metrics and time series data from GitHub
+2. **github_data_analyzer.py** - Processes repository data and calculates metrics and scores
+3. **github_user_fetcher.py** - Collects user data (stars, forks, watchers, contributors)
+4. **github_user_analyzer.py** - Analyzes and classifies users by organization type and location
+5. **model_dashboard.py** - Streamlit dashboard that visualizes all processed data
 
-### Step 1: Set up GitHub API Token
+### Data Flow & Processing Order
 
-Get a GitHub personal access token:
-- Go to GitHub → Settings → Developer settings → Personal access tokens → Tokens (classic)
-- Generate a new token with `repo` scope
-- Save the token in one of these ways:
-  1. Create a `.env` file with `GITHUB_TOKEN=your_token_here`
-  2. Save your token in a file named `github_api_key`
-  3. Set an environment variable named `GITHUB_TOKEN`
+```
+      ┌───────────────────┐        ┌───────────────────┐
+      │github_data_fetcher│  →→→   │github_data_analyzer│
+      └───────────────────┘        └───────────────────┘
+               ↓                             ↓
+         github_data.json             analyzed metrics
+               ↓                             ↓
+      ┌───────────────────┐        ┌───────────────────┐
+      │github_user_fetcher│  →→→   │github_user_analyzer│
+      └───────────────────┘        └───────────────────┘
+               ↓                             ↓
+        user_raw_data files        user_analysis_results.json
+               ↓                             ↓
+                      ┌───────────────┐
+                      │model_dashboard│
+                      └───────────────┘
+```
 
-### Step 2: Fetch GitHub Data
+## Script Details
 
-Run the data fetcher:
+### 1. GitHub Repository Data Collection
+
+#### github_data_fetcher.py
 ```
 python github_data_fetcher.py
 ```
 
-This will:
-- Load data from the `gpst_open_tools.csv` file
-- Fetch GitHub metrics for each repository
-- Collect time series data (stars, commits, code changes, issues)
-- Calculate scores 
-- Save the results to `github_data.json`
+- **Purpose**: Fetches GitHub metrics for repositories and collects time series data
+- **Inputs**: `gpst_open_tools.csv` (list of models and their repositories)
+- **Outputs**: `github_data.json` (repository metrics and time series data)
+- **Details**:
+  - Collects stars, forks, contributors, issues, releases, etc.
+  - Gathers time series data for stars, commits, code frequency, issues
+  - Requires GitHub API token
+  - Run this first before any other scripts
 
-### Step 3: Launch the Dashboard
+#### github_data_analyzer.py
+```
+python github_data_analyzer.py
+```
 
-Run the Streamlit dashboard:
+- **Purpose**: Processes GitHub data to calculate scores and metrics
+- **Inputs**: `github_data.json` from github_data_fetcher.py
+- **Outputs**: Updates `github_data.json` with calculated scores
+- **Details**:
+  - Calculates popularity, maturity, activity, community scores
+  - Detects external documentation
+  - Normalizes metrics for comparison
+  - Run this after github_data_fetcher.py
+
+### 2. GitHub User Data Collection
+
+#### github_user_fetcher.py
+```
+python github_user_fetcher.py
+```
+
+- **Purpose**: Collects detailed data about users who interact with repositories
+- **Inputs**: `github_data.json` from github_data_fetcher.py
+- **Outputs**: Raw user data files in `github_raw_data/` directory
+- **Details**:
+  - Collects stargazers, forkers, contributors, watchers
+  - Saves user profile data including company, location, email
+  - Requires GitHub API token
+  - Can be time-intensive due to API rate limits
+
+#### github_user_analyzer.py
+```
+python github_user_analyzer.py [--reprocess] [--save_raw]
+```
+
+- **Purpose**: Analyzes and classifies users by organization type and location
+- **Inputs**: Raw user data from github_user_fetcher.py
+- **Outputs**: 
+  - `user_analysis_results.json` (processed user classifications and statistics)
+  - `user_analysis_report.txt` (human-readable summary report)
+- **Details**:
+  - Classifies users as academic, industry, utility, etc.
+  - Geocodes user locations to countries
+  - Standardizes organization names
+  - Generates statistics on user types by repository
+  - Optional flags:
+    - `--reprocess`: Reapply improved organization matching logic to existing data
+    - `--save_raw`: Preserve raw data for debugging
+
+### 3. Dashboard Visualization
+
+#### model_dashboard.py
 ```
 streamlit run model_dashboard.py
 ```
 
-## Time Series Analysis
+- **Purpose**: Interactive dashboard for visualizing all collected and processed data
+- **Inputs**:
+  - `github_data.json` (repository metrics and scores)
+  - `user_analysis_results.json` (user analysis results)
+  - `gpst_open_tools.csv` (base model information)
+- **Details**:
+  - Provides interactive visualizations of all metrics
+  - Allows filtering by model category
+  - Presents time series data for tracking growth
+  - Displays user analysis by organization type and location
+  - Offers customizable scoring weights
+  - Supports model comparison
 
-The dashboard includes a "Growth Analysis" section that allows you to:
+## Complete Workflow
 
-1. **Analyze Star Growth**
-   - View cumulative star growth over time
-   - Compare growth rates (stars per day/month/year)
-   - Identify trending models based on recent growth
+For a full analysis from scratch, follow these steps in order:
 
-2. **Track Commit Activity**
-   - View commit patterns over time
-   - Compare development velocity across models
-   - Identify consistently maintained projects
+1. **Initial Setup**:
+   ```
+   # Install dependencies
+   pip install -r requirements.txt
+   
+   # Set up GitHub token (create github_api_key file or use .env)
+   echo "your_github_token" > github_api_key
+   ```
 
-3. **Monitor Code Changes**
-   - Track code additions and deletions
-   - Identify major refactoring or development periods
-   - Compare development intensity
+2. **Repository Data Collection**:
+   ```
+   # Fetch GitHub repository metrics
+   python github_data_fetcher.py
+   
+   # Process and calculate scores
+   python github_data_analyzer.py
+   ```
 
-4. **Analyze Issue Activity**
-   - Track issues opened and closed over time
-   - Calculate issue resolution times and rates
-   - Evaluate responsiveness to user feedback
+3. **User Data Collection**:
+   ```
+   # Fetch user data
+   python github_user_fetcher.py
+   
+   # Analyze and classify users
+   python github_user_analyzer.py
+   ```
+
+4. **Launch Dashboard**:
+   ```
+   # Run the Streamlit dashboard
+   streamlit run model_dashboard.py
+   ```
 
 ## Refreshing Data
 
-To update the GitHub metrics, simply run the data fetcher again:
-```
-python github_data_fetcher.py
-```
+To update the data:
+
+- For repository metrics: `python github_data_fetcher.py`
+- For user data: `python github_user_fetcher.py` followed by `python github_user_analyzer.py`
 
 The dashboard will automatically use the updated data next time it's loaded.
 
@@ -127,8 +220,8 @@ The dashboard will automatically use the updated data next time it's loaded.
 The overall score is calculated as a weighted combination of:
 - 25% Popularity (stars, forks)
 - 25% Maturity (age, maintenance, releases)
-- 20% Activity (commit frequency)
-- 15% Community (contributors)
+- 20% Developer Activity (commit frequency)
+- 15% Developer Community (contributors)
 - 15% User-friendliness (documentation, issues)
 
 You can adjust these weights in the dashboard sidebar.
@@ -138,5 +231,5 @@ You can adjust these weights in the dashboard sidebar.
 To deploy on Streamlit Cloud:
 1. Push this repository to GitHub
 2. Connect to Streamlit Cloud
-3. Add your GitHub token as a secret in the Streamlit dashboard
-4. Make sure to run the data fetcher script first and commit the generated JSON file 
+3. Add your GitHub token as a secret in the Streamlit dashboard 
+4. Make sure to run the data fetcher scripts first and commit the generated data files 

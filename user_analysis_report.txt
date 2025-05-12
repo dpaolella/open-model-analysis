@@ -3,322 +3,269 @@
 Total unique users across all repositories: 8322
 
 User classification across all repositories:
-  unknown: 5935 (71.3%)
-  academic: 1358 (16.3%)
-  professional: 560 (6.7%)
-  industry: 221 (2.7%)
-  government: 101 (1.2%)
-  research_organization: 80 (1.0%)
-  financial: 22 (0.3%)
-  ngo: 19 (0.2%)
-  rto: 14 (0.2%)
-  utility: 12 (0.1%)
+  unknown: 6070 (72.9%)
+  academic: 1173 (14.1%)
+  industry: 691 (8.3%)
+  government: 219 (2.6%)
+  professional: 108 (1.3%)
+  utility: 33 (0.4%)
+  financial: 23 (0.3%)
+  research_organization: 5 (0.1%)
 
 Top organizations:
-  national renewable energy laboratory: 68
-  pacific northwest national laboratory: 17
-  princeton university: 14
-  massachusetts institute of technology: 12
-  fraunhofer iee: 12
-  rte: 12
-  technical university of berlin: 11
-  southeast university: 11
-  national university of singapore: 11
-  delft university of technology: 10
-  north carolina state university: 9
-  kth: 9
-  dalian university of technology: 8
-  open-energy-transition protontypes: 7
-  tsinghua university university: 7
+  National Renewable Energy Laboratory: 42
+  Pacific Northwest National Laboratory: 18
+  Princeton University: 16
+  Southeast University: 14
+  @open-energy-transition @protontypes: 12
+  Fraunhofer IEE: 12
+  National University of Singapore: 11
+  RTE: 11
+  TU Delft: 10
+  KTH: 9
+  TU Berlin: 9
+  Tsinghua University: 9
+  @catalyst-cooperative: 8
+  @e3-: 8
+  Stanford University: 8
 
 Top organizations by type:
 
   Academic:
-    national renewable energy laboratory: 26
-    princeton university: 14
-    pacific northwest national laboratory: 13
-    technical university of berlin: 12
-    massachusetts institute of technology: 12
+    Princeton University: 19
+    Southeast University: 15
+    Tsinghua University: 11
+    National University of Singapore: 11
+    Stanford University: 10
 
   Financial:
-    rabobank: 6
-    imperial college london/world bank: 4
-    ecesis investment llc: 3
-    european bank for reconstruction and development: 2
-    capital one: 1
+    Rabobank: 6
+    ECESIS Investment LLC: 3
+    Deep Science Ventures: 2
+    European Bank for Reconstruction and Development: 2
+    Capital One: 1
 
   Government:
-    national renewable energy laboratory: 39
-    national renewable energy laboratory (national renewable energy laboratory: 8
-    sandia national laboratories: 7
-    national renewable energy laboratory , uw: 5
-    pacific northwest national laboratory: 5
+    National Renewable Energy Laboratory: 47
+    Pacific Northwest National Laboratory: 19
+    Federal University of Ceara: 10
+    Los Alamos National Laboratory: 8
+    Argonne National Laboratory: 7
 
   Industry:
-    tesla: 7
-    our next energy, inc: 6
-    ethos sustainability group: 5
-    retoflow gmbh: 4
-    danish energy agency: 4
-
-  Ngo:
-    rmi: 13
-    greenpeace: 2
-    international energy agency: 2
-    stockholm environment institute: 1
-    erminc: 1
+    @open-energy-transition @protontypes: 20
+    Tesla: 8
+    Siemens: 7
+    Our Next Energy, Inc.: 6
+    @CMCC-Foundation: 5
 
   Professional:
-    open-energy-transition protontypes: 20
-    cmcc-foundation: 5
-    self-employed: 3
-    3vgeomatics: 3
-    tno: 3
-
-  Research_organization:
-    starsoul science&technology: 6
-    german aerospace center (dlr), institute of networked energy systems: 5
-    institute for energy studies: 5
-    divecha centre for climate change, indian institute of science: 4
-    sintef energy research: 3
-
-  Rto:
-    ercot: 4
-    first principles advisory: 4
-    dunsky energy + climate advisors: 2
-    candisolarglobal: 1
-    sarapisorg: 1
-
-  Unknown:
-    e3: 8
-    rte: 8
-    ku leuven: 4
-    jacobs: 4
-    kth: 4
+    Self-employed: 4
+    retoflow GmbH: 4
+    Reiner Lemoine Institut gGmbH: 3
+    Scientific Web Services LLC: 3
+    coder nostra GmbH: 2
 
   Utility:
-    capgemini engineering: 2
-    gisce ti, s.l: 2
-    nextera analytics: 2
-    southern company: 2
-    power company: 1
+    Electric Power Research Institute: 5
+    First Principles Advisory: 4
+    Dunsky Energy + Climate Advisors: 2
+    Faculdade Engenharia Universidade do Porto: 1
+    TenneT TSO: 1
 
 Repository breakdown:
 
 Temoa:
   Total users: 132
   User classifications:
-    unknown: 90 (68.2%)
-    academic: 22 (16.7%)
-    professional: 9 (6.8%)
-    industry: 6 (4.5%)
-    government: 2 (1.5%)
+    unknown: 92 (69.7%)
+    academic: 20 (15.2%)
+    industry: 10 (7.6%)
+    professional: 4 (3.0%)
+    government: 4 (3.0%)
     financial: 1 (0.8%)
-    rto: 1 (0.8%)
-    research_organization: 1 (0.8%)
+    utility: 1 (0.8%)
 
 PowerModels:
   Total users: 530
   User classifications:
-    unknown: 327 (61.7%)
-    academic: 128 (24.2%)
-    professional: 42 (7.9%)
-    industry: 19 (3.6%)
-    government: 8 (1.5%)
-    research_organization: 3 (0.6%)
+    unknown: 337 (63.6%)
+    academic: 116 (21.9%)
+    industry: 53 (10.0%)
+    government: 17 (3.2%)
+    professional: 4 (0.8%)
     financial: 2 (0.4%)
-    rto: 1 (0.2%)
+    utility: 1 (0.2%)
 
 pandapower:
   Total users: 1338
   User classifications:
-    unknown: 1001 (74.8%)
-    academic: 191 (14.3%)
-    professional: 93 (7.0%)
-    industry: 33 (2.5%)
-    research_organization: 8 (0.6%)
-    government: 5 (0.4%)
-    financial: 3 (0.2%)
-    utility: 3 (0.2%)
-    ngo: 1 (0.1%)
+    unknown: 1029 (76.9%)
+    academic: 156 (11.7%)
+    industry: 107 (8.0%)
+    professional: 22 (1.6%)
+    government: 15 (1.1%)
+    financial: 5 (0.4%)
+    utility: 4 (0.3%)
 
 ParaEMT:
   Total users: 91
   User classifications:
-    unknown: 61 (67.0%)
-    academic: 24 (26.4%)
-    professional: 6 (6.6%)
+    unknown: 62 (68.1%)
+    academic: 21 (23.1%)
+    industry: 6 (6.6%)
+    government: 2 (2.2%)
 
 RESOLVE:
   Total users: 11
   User classifications:
-    unknown: 8 (72.7%)
+    unknown: 9 (81.8%)
     academic: 1 (9.1%)
-    professional: 1 (9.1%)
     industry: 1 (9.1%)
 
 PRAS:
   Total users: 81
   User classifications:
-    unknown: 45 (55.6%)
-    academic: 23 (28.4%)
-    government: 5 (6.2%)
-    industry: 3 (3.7%)
-    ngo: 1 (1.2%)
-    professional: 1 (1.2%)
-    financial: 1 (1.2%)
-    rto: 1 (1.2%)
-    utility: 1 (1.2%)
+    unknown: 48 (59.3%)
+    academic: 17 (21.0%)
+    government: 12 (14.8%)
+    industry: 2 (2.5%)
+    utility: 2 (2.5%)
 
 GenX:
   Total users: 401
   User classifications:
-    unknown: 264 (65.8%)
-    academic: 79 (19.7%)
-    professional: 23 (5.7%)
-    industry: 14 (3.5%)
-    research_organization: 11 (2.7%)
-    government: 4 (1.0%)
-    ngo: 3 (0.7%)
-    financial: 3 (0.7%)
+    unknown: 275 (68.6%)
+    academic: 74 (18.5%)
+    industry: 34 (8.5%)
+    government: 11 (2.7%)
+    professional: 5 (1.2%)
+    utility: 1 (0.2%)
+    financial: 1 (0.2%)
 
 Dynaωo:
   Total users: 119
   User classifications:
-    unknown: 90 (75.6%)
-    academic: 16 (13.4%)
-    professional: 8 (6.7%)
-    industry: 3 (2.5%)
-    research_organization: 2 (1.7%)
+    unknown: 94 (79.0%)
+    industry: 12 (10.1%)
+    academic: 11 (9.2%)
+    government: 1 (0.8%)
+    professional: 1 (0.8%)
 
 PVWatts Calculator:
   Total users: 175
   User classifications:
-    unknown: 128 (73.1%)
-    academic: 18 (10.3%)
-    government: 10 (5.7%)
-    professional: 9 (5.1%)
-    industry: 6 (3.4%)
+    unknown: 130 (74.3%)
+    government: 16 (9.1%)
+    industry: 16 (9.1%)
+    academic: 10 (5.7%)
     financial: 2 (1.1%)
-    utility: 1 (0.6%)
-    research_organization: 1 (0.6%)
+    professional: 1 (0.6%)
 
 emerge:
   Total users: 23
   User classifications:
-    unknown: 16 (69.6%)
-    academic: 3 (13.0%)
-    professional: 2 (8.7%)
-    government: 1 (4.3%)
-    industry: 1 (4.3%)
+    unknown: 15 (65.2%)
+    industry: 3 (13.0%)
+    government: 2 (8.7%)
+    academic: 2 (8.7%)
+    utility: 1 (4.3%)
 
 PyPSA:
   Total users: 1888
   User classifications:
-    unknown: 1395 (73.9%)
-    academic: 283 (15.0%)
-    professional: 133 (7.0%)
-    industry: 43 (2.3%)
-    research_organization: 16 (0.8%)
+    unknown: 1431 (75.8%)
+    academic: 243 (12.9%)
+    industry: 159 (8.4%)
+    professional: 24 (1.3%)
+    government: 20 (1.1%)
+    utility: 5 (0.3%)
     financial: 5 (0.3%)
-    ngo: 4 (0.2%)
-    utility: 4 (0.2%)
-    government: 4 (0.2%)
-    rto: 1 (0.1%)
+    research_organization: 1 (0.1%)
 
 System Advisor Model:
   Total users: 534
   User classifications:
-    unknown: 414 (77.5%)
-    academic: 42 (7.9%)
-    professional: 34 (6.4%)
-    industry: 23 (4.3%)
-    government: 14 (2.6%)
-    research_organization: 4 (0.7%)
-    ngo: 1 (0.2%)
-    utility: 1 (0.2%)
-    rto: 1 (0.2%)
+    unknown: 420 (78.7%)
+    industry: 45 (8.4%)
+    academic: 31 (5.8%)
+    government: 22 (4.1%)
+    professional: 14 (2.6%)
+    utility: 2 (0.4%)
 
 TIMES:
   Total users: 149
   User classifications:
-    unknown: 107 (71.8%)
-    academic: 26 (17.4%)
-    professional: 7 (4.7%)
-    industry: 5 (3.4%)
+    unknown: 110 (73.8%)
+    academic: 22 (14.8%)
+    industry: 8 (5.4%)
+    professional: 4 (2.7%)
+    government: 3 (2.0%)
     research_organization: 2 (1.3%)
-    ngo: 2 (1.3%)
 
 GridPath:
   Total users: 136
   User classifications:
-    unknown: 101 (74.3%)
-    academic: 18 (13.2%)
-    professional: 9 (6.6%)
-    rto: 3 (2.2%)
-    ngo: 2 (1.5%)
-    industry: 2 (1.5%)
-    research_organization: 1 (0.7%)
+    unknown: 105 (77.2%)
+    academic: 17 (12.5%)
+    industry: 7 (5.1%)
+    professional: 3 (2.2%)
+    government: 2 (1.5%)
+    utility: 2 (1.5%)
 
 PowerSimulationsDynamics.jl:
   Total users: 228
   User classifications:
-    unknown: 159 (69.7%)
-    academic: 42 (18.4%)
-    professional: 17 (7.5%)
-    government: 4 (1.8%)
-    research_organization: 4 (1.8%)
-    industry: 2 (0.9%)
+    unknown: 161 (70.6%)
+    academic: 40 (17.5%)
+    industry: 19 (8.3%)
+    government: 7 (3.1%)
+    professional: 1 (0.4%)
 
 SpineOpt:
   Total users: 100
   User classifications:
-    unknown: 67 (67.0%)
-    academic: 21 (21.0%)
-    professional: 6 (6.0%)
-    industry: 2 (2.0%)
-    research_organization: 2 (2.0%)
-    government: 2 (2.0%)
+    unknown: 68 (68.0%)
+    academic: 19 (19.0%)
+    industry: 7 (7.0%)
+    government: 4 (4.0%)
+    professional: 2 (2.0%)
 
 DPSim:
   Total users: 131
   User classifications:
-    unknown: 97 (74.0%)
-    academic: 23 (17.6%)
-    professional: 8 (6.1%)
-    research_organization: 2 (1.5%)
-    industry: 1 (0.8%)
+    unknown: 99 (75.6%)
+    academic: 16 (12.2%)
+    industry: 14 (10.7%)
+    government: 1 (0.8%)
+    utility: 1 (0.8%)
 
 PowerSystems.jl:
   Total users: 390
   User classifications:
-    unknown: 262 (67.2%)
-    academic: 66 (16.9%)
-    professional: 32 (8.2%)
-    government: 12 (3.1%)
-    industry: 8 (2.1%)
-    research_organization: 4 (1.0%)
-    rto: 2 (0.5%)
+    unknown: 269 (69.0%)
+    academic: 61 (15.6%)
+    industry: 35 (9.0%)
+    government: 18 (4.6%)
+    professional: 3 (0.8%)
+    financial: 2 (0.5%)
     utility: 2 (0.5%)
-    financial: 1 (0.3%)
-    ngo: 1 (0.3%)
 
 ModPowerSystems:
   Total users: 5
   User classifications:
     unknown: 4 (80.0%)
-    professional: 1 (20.0%)
+    industry: 1 (20.0%)
 
 Spine Toolbox:
   Total users: 103
   User classifications:
-    unknown: 69 (67.0%)
+    unknown: 65 (63.1%)
     academic: 20 (19.4%)
-    professional: 9 (8.7%)
-    government: 2 (1.9%)
-    industry: 1 (1.0%)
-    rto: 1 (1.0%)
-    research_organization: 1 (1.0%)
+    industry: 13 (12.6%)
+    government: 3 (2.9%)
+    professional: 1 (1.0%)
+    utility: 1 (1.0%)
 
 Inertia Monitor:
   Total users: 1
@@ -328,89 +275,86 @@ Inertia Monitor:
 MATPOWER:
   Total users: 575
   User classifications:
-    unknown: 409 (71.1%)
-    academic: 108 (18.8%)
-    professional: 39 (6.8%)
-    industry: 11 (1.9%)
-    research_organization: 5 (0.9%)
-    rto: 2 (0.3%)
-    government: 1 (0.2%)
+    unknown: 414 (72.0%)
+    academic: 102 (17.7%)
+    industry: 43 (7.5%)
+    government: 8 (1.4%)
+    professional: 4 (0.7%)
+    utility: 3 (0.5%)
+    financial: 1 (0.2%)
 
 Switch:
   Total users: 195
   User classifications:
-    unknown: 122 (62.6%)
-    academic: 38 (19.5%)
-    professional: 16 (8.2%)
-    research_organization: 6 (3.1%)
-    industry: 6 (3.1%)
-    government: 4 (2.1%)
-    financial: 2 (1.0%)
-    ngo: 1 (0.5%)
+    unknown: 129 (66.2%)
+    academic: 36 (18.5%)
+    industry: 19 (9.7%)
+    government: 5 (2.6%)
+    professional: 3 (1.5%)
+    utility: 2 (1.0%)
+    financial: 1 (0.5%)
 
 Antares:
   Total users: 103
   User classifications:
     unknown: 80 (77.7%)
-    academic: 9 (8.7%)
-    professional: 8 (7.8%)
-    industry: 4 (3.9%)
-    research_organization: 1 (1.0%)
+    industry: 12 (11.7%)
+    academic: 8 (7.8%)
     financial: 1 (1.0%)
+    government: 1 (1.0%)
+    professional: 1 (1.0%)
 
 ExaGO:
   Total users: 96
   User classifications:
-    unknown: 60 (62.5%)
-    academic: 21 (21.9%)
-    professional: 7 (7.3%)
-    government: 6 (6.2%)
-    industry: 2 (2.1%)
+    unknown: 59 (61.5%)
+    academic: 16 (16.7%)
+    government: 12 (12.5%)
+    industry: 9 (9.4%)
 
 Simplus Grid Tool:
   Total users: 111
   User classifications:
-    unknown: 88 (79.3%)
-    academic: 20 (18.0%)
-    professional: 3 (2.7%)
+    unknown: 87 (78.4%)
+    academic: 21 (18.9%)
+    industry: 3 (2.7%)
 
 OSeMOSYS:
   Total users: 244
   User classifications:
-    unknown: 173 (70.9%)
-    academic: 40 (16.4%)
-    professional: 13 (5.3%)
-    industry: 11 (4.5%)
-    research_organization: 5 (2.0%)
-    financial: 1 (0.4%)
-    ngo: 1 (0.4%)
+    unknown: 176 (72.1%)
+    academic: 35 (14.3%)
+    industry: 21 (8.6%)
+    professional: 5 (2.0%)
+    research_organization: 2 (0.8%)
+    government: 2 (0.8%)
+    financial: 2 (0.8%)
+    utility: 1 (0.4%)
 
 CIM++:
   Total users: 49
   User classifications:
-    unknown: 40 (81.6%)
-    professional: 5 (10.2%)
-    academic: 3 (6.1%)
-    industry: 1 (2.0%)
+    unknown: 39 (79.6%)
+    industry: 6 (12.2%)
+    academic: 2 (4.1%)
+    professional: 1 (2.0%)
+    utility: 1 (2.0%)
 
 ReEDS:
   Total users: 204
   User classifications:
-    unknown: 147 (72.1%)
-    academic: 39 (19.1%)
-    professional: 5 (2.5%)
-    government: 5 (2.5%)
-    industry: 5 (2.5%)
-    ngo: 1 (0.5%)
-    research_organization: 1 (0.5%)
-    rto: 1 (0.5%)
+    unknown: 148 (72.5%)
+    academic: 34 (16.7%)
+    industry: 9 (4.4%)
+    government: 9 (4.4%)
+    utility: 3 (1.5%)
+    professional: 1 (0.5%)
 
 HELICS:
   Total users: 179
   User classifications:
-    unknown: 111 (62.0%)
-    academic: 34 (19.0%)
-    professional: 14 (7.8%)
-    government: 11 (6.1%)
-    industry: 8 (4.5%)
-    ngo: 1 (0.6%)
+    unknown: 115 (64.2%)
+    academic: 22 (12.3%)
+    government: 21 (11.7%)
+    industry: 17 (9.5%)
+    professional: 4 (2.2%)

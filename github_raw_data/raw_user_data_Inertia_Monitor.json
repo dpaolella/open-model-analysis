@@ -13,7 +13,11 @@
       "followers": 33,
       "public_repos": 46,
       "interaction_type": "contributor",
-      "contributions": 47
+      "contributions": 47,
+      "normalized_org_name": "nrel uw",
+      "org_match_confidence": 1.0,
+      "classification": "government",
+      "dashboard_org_name": "@NREL , UW"
     }
   ],
   "watchers": []

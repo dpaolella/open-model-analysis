@@ -10,7 +10,8 @@
       "user_type": "User",
       "followers": 179,
       "public_repos": 186,
-      "interaction_type": "star"
+      "interaction_type": "star",
+      "classification": "industry"
     }
   ],
   "forkers": [
@@ -24,7 +25,8 @@
       "user_type": "User",
       "followers": 0,
       "public_repos": 2,
-      "interaction_type": "fork"
+      "interaction_type": "fork",
+      "classification": "unknown"
     },
     {
       "login": "modelica-3rdparty",
@@ -36,7 +38,8 @@
       "user_type": "Organization",
       "followers": 60,
       "public_repos": 135,
-      "interaction_type": "fork"
+      "interaction_type": "fork",
+      "classification": "unknown"
     }
   ],
   "contributors": [
@@ -51,7 +54,8 @@
       "followers": 21,
       "public_repos": 19,
       "interaction_type": "contributor",
-      "contributions": 10
+      "contributions": 10,
+      "classification": "unknown"
     },
     {
       "login": "dinkelbachjan",
@@ -64,7 +68,8 @@
       "followers": 0,
       "public_repos": 6,
       "interaction_type": "contributor",
-      "contributions": 1
+      "contributions": 1,
+      "classification": "unknown"
     }
   ],
   "watchers": [
@@ -78,7 +83,8 @@
       "user_type": "User",
       "followers": 179,
       "public_repos": 186,
-      "interaction_type": "watcher"
+      "interaction_type": "watcher",
+      "classification": "industry"
     }
   ]
 }
